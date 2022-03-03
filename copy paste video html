@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Jacobs Works
+
+
+
+PLEASE READ THE FULL CAPS WORDS HERE SOME THINGS NEED TO BE REPLACED WHEN MAKING NEW STUFF
+
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=auto, initial-scale=1.0">
+
+<title>PUT VIDEO TITLE HERE</title>
+    <!--gethtml.js grabs code from another html file-->
+    
+</head>
+
+
+
+
+<script src="/scripts/gethtml.js"></script>
+<script src="/scripts/butt.js"></script>
+<script>includeHTML("/videosites/example.html");</script>
+
+
+<body>
+    <!--A KEY ROLE IN INCLUDING HTML FILES-->
+    <div id="copyhtml"></div>
+    <!--Where the html is injected-->
+    <h1 class=TitleVid>
+    <!--Heres the text tht shows above the video just change it to be the title-->
+    PUT VIDEO TITLE HERE
+    </h1>
+
+    
+ 
+
+
+    <!--Video -->        
+    <div class=video>
+        <video  controls  autoplay>
+
+
+        <!--Heres the video just change the mp4 for it to work-->
+        <source src="PUT VIDEO DIRECTORY HERE" type="video/mp4">
+    
+    
+    
+    </video>
+    </body>
+
+<script src="/scripts/vt.js"></script>
+</html>
+
+<!--NICE-->
+

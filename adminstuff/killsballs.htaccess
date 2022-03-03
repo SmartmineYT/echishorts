@@ -1,0 +1,6 @@
+# BEING User Auth-
+AuthUserFile /adminstuff/killballs.htpasswd
+AuthName 'For Admins Only'
+AuthType Basic
+Require valid-user
+# END User Auth

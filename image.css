@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Nunito+Sans:wght@900&display=swap');
+
+@media (max-width: 480px) {
+    .Homecateg {
+        display: none;
+    }
+    .card {
+    
+        width: 144px;
+        height: 256px;
+    }
+    .col {
+        min-width: 974px;
+        padding: 20px;
+    }
+
+    .side_left{
+        display: none;
+    }
+    .side_right{
+        display: none;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+*{
+
+    margin: 0;
+    padding: 0%;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+
+    background-color: black;
+
+}
+
+h1 {
+
+    color:white;  
+    
+}
+
+
+
+/* Centers the image */
+.Imagecenter {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/*Video Title Class: Centers the video*/
+.TitleVid {
+
+    text-align: center;
+
+}
+/* Centers Video*/
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+/*Video Player CSS*/
+video {
+    width: 47vh;
+    height: 85vh;
+
+
+}
+
+/*Use it as a spacer rly thats it but i think its fucked up rn idrc ill fix l8r*/
+.spacer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    
+}
+
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url();
+    background-position: center;
+    background-size: cover;
+    padding-left: 0%;
+    padding-right: 0%;
+    box-sizing: border-box;
+    
+}
+
+.navbar {
+
+    height: 5%;
+    display: flex;
+    align-items: center;
+}
+
+
+.navigation {
+
+    flex: 1;
+    text-align: center;
+   
+}
+
+li {
+    display: inline-block;
+
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-size: 25px;
+    padding: 40px 40px 40px 40px;
+    display: inline-block;
+
+}
+
+.navigation ul {
+
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 130px;
+    height: 80px;
+    z-index: 999;
+    /*aligns navigation along the top*/ 
+}
+
+.navigation ul {
+
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    /*turns the color from purple to white (goat helped) yes and no*/
+}
+
+.row {
+
+    display: flex;
+    height: 50%;
+    align-items: center;
+    flex-direction:column;
+}
+
+.titlecol {
+    flex-basis: 50%;
+    margin: 0% auto;
+    width: 50vh;
+}
+.col {
+
+    flex-basis: 100%;
+    margin: 0% auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    min-width: 974px;
+    display: row;
+
+}
+
+.frontpageh {
+    margin-top: 15%;
+    color:whitesmoke;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+}
+
+p {
+
+    color: whitesmoke;
+    font-size: 11px;
+}
+
+.menubutton {
+
+    width: 180px;
+    color: black;
+    font-size: 12px;
+    padding: 12px 0;
+    background: white;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.card {
+    
+    width: 240px;
+    height: 426px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 0px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    
+    
+    
+
+}
+/*Balls*/
+.hide{
+    opacity: 0;
+    padding: 0px 0px;
+    border-radius: 0px;
+    font-size: 0px;
+    transition: 0.2s;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+.showcateg{
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.ButtonCateg {
+
+    
+    color: white;
+    font-size: 12px;
+    padding: 10px 40px;
+    background: rgb(0, 0, 0);
+    border: 12;
+    border-radius: 0px;
+    margin-top: 15px;
+
+    
+}
+
+.linkanim {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+.linkanim::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: currentColor;
+    transition: width 0.3s;
+}
+
+.linkanim:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+    background-color: white;
+    color: black;
+}
+    
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/*homepage cards*/
+.homecard1 {
+    background-image: url(/thumbnail/MASTURBATION.jfif);
+}
+
+.homecard2 {
+    background-image: url(/thumbnail/BIG-BOOBS.jpg);
+}
+
+.homecard3 {
+    background-image: url(/thumbnail/BDSM.jpg);
+}
+
+.homecard4 {
+    background-image: url(/thumbnail/LEWD.jpg);
+}
+
+/*image cards*/
+.imagecard1 {
+    background-image: url(/thumbnail/AHEAGO.jfif); /*uhh probably a gf*/
+}
+
+.imagecard2 {
+    background-image: url(/thumbnail/LEWD.jpg);
+}
+
+.imagecard3 {
+    background-image: url(/thumbnail/IYURI.jfif); 
+}
+
+.imagecard4 {
+    background-image: url(/thumbnail/BIG-BOOBS.jpg);
+}
+.imagecard5 {
+    background-image: url(/thumbnail/IGANG-BANG.jfif);
+}
+
+.imagecard6 {
+    background-image: url(/thumbnail/MEN.jfif);
+}
+
+.imagecard7 {
+    background-image: url(/thumbnail/IVANILLA.jfif);
+}
+
+.imagecard8 {
+    background-image: url(/thumbnail/IMASTURBATION.jfif);
+}
+.imagecard9 {
+    background-image: url(/thumbnail/PUBLIC.jfif);
+}
+
+.imagecard10 {
+    background-image: url(/thumbnail/IANAL.jfif);
+}
+
+.imagecard11 {
+    background-image: url(/thumbnail/ITHREESOME.jfif);
+}
+
+.imagecard12 {
+    background-image: url(/thumbnail/ASS.jfif);
+}
+/*video cards*/
+.videocard1 {
+    background-image: url(/thumbnail/VVANILLA.jfif);
+}
+
+.videocard2 {
+    background-image: url(/thumbnail/MASTURBATION.jfif);
+}
+
+.videocard3 {
+    background-image: url(/thumbnail/BLOW-JOB.jpg);
+}
+
+.videocard4 {
+    background-image: url(/thumbnail/BDSM.jpg);
+}
+.videocard5 {
+    background-image: url(/thumbnail/VYURI.jfif);
+}
+
+.videocard6 {
+    background-image: url(/thumbnail/VLOLICON.jfif);
+}
+
+.videocard7 {
+    background-image: url(/thumbnail/RIDING.jpg);
+}
+
+.videocard8 {
+    background-image: url(/thumbnail/VGANG-BANG.jfif);
+}
+.videocard9 {
+    background-image: url(/thumbnail/VTHREESOME.jfif);
+}
+.videocard10 {
+    background-image: url(/thumbnail/MILF.jfif);
+}
+.videocard11 {
+    background-image: url(/thumbnail/MONSTER.jfif);
+}
+.videocard12 {
+    background-image: url(/thumbnail/TRAP.jfif);
+}
+
+.misccard1 {
+    background-image: url(/thumbnail/TESTCARD1.jpg);
+}
+
+.misccard2 {
+    background-image: url(/thumbnail/TESTCARD1.jpg);
+}
+
+.misccard3 {
+    background-image: url(/thumbnail/TESTCARD1.jpg);
+}
+
+.misccard4 {
+    background-image: url(/thumbnail/TESTCARD1.jpg);
+}
+.ButtonCateg {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.ButtonCateg1:hover {
+    opacity: 0.7;}
+    
+    .ButtonCateg2:hover {
+        opacity: 0.7;}
+
+        .ButtonCateg3:hover {
+            background-color: white;
+            /*width: 47vh;
+            height: 85vh;*/
+
+            opacity: 0.7;}
+
+.featured {
+
+    text-align: center;
+}
+
+.side_right {
+    background-color: brown;
+    width: 36vh;
+    float: right;
+    width: 160px;
+    height: 600px;
+}
+
+.side_left {
+    background-color: blueviolet;
+    width: 36vh;
+    float: left;
+    width: 160px;
+    height: 600px;
+}
+
+
+
+.demo {
+
+
+
+
+    color: white;
+}
+
+.search__input {
+    width: 80%;
+    height: 20px;
+    font-size: 18px;
+    color: #504f4f;
+    background-color: #efefef;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 100px;
+    margin-right: -50px;
+
+    transition: all 0.2s;
+}
+
+.search {
+    width: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search__input:focus {
+    outline: none;
+    width: 100%;
+    background-color: #f0eeee;
+}
+
+.search__input::-webkit-input-placeholder {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.search__button {
+    border: none;
+    background-color: #efefef;
+    cursor: pointer;
+
+    transition: all 0.2s;
+}
+
+.search__button:focus {
+    outline: none;
+}
+
+.search__button:active {
+    transform: translateY(2px);
+}
+
+.search__icon {
+    font-size: 25px;
+    color: #999;
+}
+
+h5 {
+    text-decoration: none;
+    color: black;
+}
+/*do i just put hv instead of % OOOOOOOOOOOOOO */
+
+/* http://127.0.0.1:5500/index.html */
+
+
+/*iAheago cards*/
+
+.wrapper-gridindex {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+
+}
+
+.iaheagocard1 {
+    background-image: url(/thumbnail/TESTCARD1.jpg);
+    background-size: 100%;
+    
+}
+
+.iaheagocard2 {
+    background-image: url(/thumbnail/TESTCARD1.jpg);
+    background-size: 100%;
+    
+}
+
+.iaheagocard3 {
+    background-image: url(/thumbnail/TESTCARD1.jpg);
+    background-size: 100%;
+    
+}
+
+.iaheagocard4 {
+    background-image: url(/thumbnail/TESTCARD1.jpg);
+    background-size: 100%;
+}
+
+.iaheagocard5 {
+    background-image: url(/thumbnail/TESTCARD1.jpg);
+    background-size: 100%;
+}

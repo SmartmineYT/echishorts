@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Nunito+Sans:wght@900&display=swap');
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+*{
+
+    margin: 0;
+    padding: 0%;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+
+    background-color: rgb(0, 0, 0);
+}
+
+h1 {
+
+    color:white;  
+
+}
+
+
+
+/* Centers the image */
+.Imagecenter {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/*Video Title Class: Centers the video*/
+.TitleVid {
+
+    text-align: center;
+
+}
+/* Centers Video*/
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+/*Video Player CSS*/
+video {
+    width: 47vh;
+    height: 85vh;
+
+
+}
+
+/*Use it as a spacer rly thats it but i think its fucked up rn idrc ill fix l8r*/
+.spacer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    
+}
+
+
+
+.container {
+
+    width: 100;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url();
+    background-position: center;
+    background-size: cover;
+    padding-left: 0%;
+    padding-right: 0%;
+    box-sizing: border-box;
+    
+}
+
+.navbar {
+
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+
+    width: 50%;
+    cursor: pointer;
+
+}
+
+
+.navigation {
+
+    flex: 1;
+    text-align: right;
+   
+}
+
+.navigation ul li {
+
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 130px;
+    height: 80px;
+    z-index: 999;
+    /*aligns navigation along the top*/ 
+}
+
+.navigation ul li a {
+
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    /*turns the color from purple to white (goat helped) yes and no*/
+}
+
+.row {
+
+    display: flex;
+    height: 60%;
+    align-items: center;
+    flex-direction:column
+}
+
+.titlecol {
+    flex-basis: 50%;
+    margin: 0% auto;
+    width: 50vh;
+}
+.col {
+    flex-basis: 50%;
+    margin: 0% auto;
+}
+
+.frontpageh {
+    margin-top: 15%;
+    color:whitesmoke;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+}
+
+p {
+
+    color: whitesmoke;
+    font-size: 11px;
+}
+
+.menubutton {
+
+    width: 180px;
+    color: black;
+    font-size: 12px;
+    padding: 12px 0;
+    background: white;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.card {
+
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 0vh 0vh;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+
+}
+/*Balls*/
+.hide{
+    opacity: 0;
+    transition: 0.2s;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+.showcateg{
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.ButtonCateg {
+
+    opacity: 1;
+    color: white;
+    font-size: 12px;
+    padding: 10px 30px;
+    background: rgb(0, 0, 0);
+    border: 12;
+    border-radius: 0px;
+    outline: white;
+    border-color: white;
+    margin-top: 15px;
+
+    
+}
+
+.ButtonCateg:hover {
+    background-color: white;
+    color: black;
+}
+
+.ButtonCateg:hover{
+    opacity: 0.7;
+    transition: 0.5;
+
+}
+    
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card1 {
+    background-image: url(thumbnail/TESTCARD1.jpg);
+}
+
+.card2 {
+    background-image: url(thumbnail/TESTCARD2.jpg);
+}
+
+.card3 {
+    background-image: url(thumbnail/TESTCARD3.jpg);
+}
+
+.card4 {
+    background-image: url(thumbnail/TESTCARD4.jpg);
+}
+   
+.ButtonCateg {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.ButtonCateg1:hover {
+    opacity: 0.7;}
+    
+    .ButtonCateg2:hover {
+        opacity: 0.7;}
+
+        .ButtonCateg3:hover {
+            background-color: white;
+            /*width: 47vh;
+            height: 85vh;*/
+
+            opacity: 0.7;}
+
+.featured {
+
+    text-align: center;
+}
+
+.side_right {
+    background-color: brown;
+    width: 36vh;
+    float: right;
+}
+
+.side_left {
+    background-color: blueviolet;
+    width: 36vh;
+    float: left;
+}
+
+
+
+
+
+
+
+
+.demo {
+
+
+
+
+    color: white;
+}
+form {
+
+color: white;
+
+}
+.search__input {
+    width: 90%;
+    height: 20px;
+    font-size: 18px;
+    color: #504f4f;
+    background-color: #efefef;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 100px;
+    margin-right: -50px;
+
+    transition: all 0.2s;
+}
+
+.search {
+    width: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search__input:focus {
+    outline: none;
+    width: 100%;
+    background-color: #f0eeee;
+}
+
+.search__input::-webkit-input-placeholder {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.search__button {
+    border: none;
+    background-color: #efefef;
+    cursor: pointer;
+
+    transition: all 0.2s;
+}
+
+.search__button:focus {
+    outline: none;
+}
+
+.search__button:active {
+    transform: translateY(2px);
+}
+
+.search__icon {
+    font-size: 25px;
+    color: #999;
+}
+
+/*do i just put hv instead of % OOOOOOOOOOOOOO */
+
+/* http://127.0.0.1:5500/index.html */
+
+
+/**/
