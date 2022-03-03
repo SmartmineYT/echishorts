@@ -5,50 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=auto, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/css.css"> <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/accessories/css/image.css"> <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Echishorts.Tv</title>
     <link rel="icon" type="image/png" href="/accessories/EPICLOGO.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <script src="/scripts/butt.js"></script>
     
 </head>
-<body class=first>  
+<body>  
 
  <div>
 <div class=container>
 
     <div class="navbar">
-<img src="/accessories/EPICLOGO.png" class="logo" style="width:50px;height:50px;">
 <nav class=navigation>
-    <ul>
-        <li><button class=ButtonCateg onclick="window.open('/index.html','_self')"> HOME </button></li>
+    <br>
+    <br>
+    <br>
+    <!--Button Catergory-->
+    <ul class=buttonanim>
+        <li><a class="Homecateg ButtonCateg linkanim" onclick="window.open('/index.html','_self')"> HOME </a></li>
+        <li><a class="Homecateg ButtonCateg linkanim" type="categg" onclick="CategClick()"> CATEGORIES </a></li>
+        <a class="Homecateg ButtonCateg linkanim" onclick="window.open('https://discord.gg/Yrw4CfW')"> DISCORD </a>
+         <div  class="categgs" id="categgs">
+             
+            <button class="button-48, hide" onclick="window.open('/categories/Images.html','_self')" role="button" id=ButtonCategid1><span class="text">Images</span></button>
 
-        <!--Button Catergory-->
-        <li><button class=ButtonCateg type="categg" onclick="CategClick()">CATEGORIES</button><li> <!--HELLO ARC3NE I LOVE YOUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU-->
+            <button class="button-48, hide" onclick="window.open('/categories/Gifs.html','_self')" role="button" id=ButtonCategid2><span class="text">Gifs</span></button>
 
+            <button class="button-48, hide" onclick="window.open('/categories/Misc.html','_self')" role="button" id=ButtonCategid3><span class="text">Misc</span></button>
+        </div></ul>
 
-        <button class="ButtonCateg" onclick="window.open('https://discord.gg/Yrw4CfW')"> DISCORD </button>
+<ul class="nav-menu">
+         <li class="nav-item">
+            <a href="#" class="nav-link">Images</a>
+        </li>
+        <li class="navitem">
+            <a href="#" class="nav-link">Gifs</a>
+        </li>
+        <li class="navitem">
+            <a href="#" class="nav-link">Misc</a>
+        </li>
+        <li class="navitem">
+            <a href="#" class="nav-link">Discord</a>
+        </li>
+    </ul>  
     </ul>
-    <!--This is what shows after categories is clicked-->
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
     
-
-
-
-
-<div  id="categgs">
-    <button class="hide" onclick="window.open('/categories/Images.html','_self')" id="ButtonCategid1">
-        Images
-    </button>
-    <button class="hide" onclick="window.open('/categories/Videos.html','_self')" id="ButtonCategid2">
-        Videos
-    </button>
-    <button class="hide" onclick="window.open('/categories/Misc.html','_self')" id="ButtonCategid3">
-        Misc
-    </button>
-
-</div>
-
+    <!--This is what shows after categories is clicked-->
 
 
 
@@ -56,25 +64,27 @@
 
 </nav>
     </div>
-<br>
-<br>
-<br>
     <div class="row">
         <div class="titlecol">
             <h1 class=frontpageh>Echishorts</h1>
-            <form action="#" class="search">
-                <input type="search" class="search__input" placeholder="Search" value>
+            <form onchange="" class="search">
+                <input type="search" class="search__input" id= "search" placeholder="Search Categories" onchange="openPage()">
                 <button class="search__button">
-                    <i class="fas fa-search search__icon"></i>
+                    <i class="fas fa-search search__icon" id='link' onclick="openPage()"></i>
                 </button>
             </form>
+            <br>
+<br>
+<br>
+<br>
+<br>
 <!-- 
 Adriel (papi) says 
 also CHANGE THE TEXT type to 'search' type
 
 <input type="search" value>
 
-search = document.getElementByID(GAYPORN).value
+search = document.getElementByID(?).value
 search = search.replace(" ","")
 
 
@@ -141,7 +151,7 @@ search = search.replace(" ","")
 <!--
 s
 
-WERE CHANGING HOW CARDS WORK 
+WE'RE CHANGING HOW CARDS WORK 
 document.elementgetbyid.style = sexy style css
 -->
 
@@ -150,25 +160,74 @@ document.elementgetbyid.style = sexy style css
     </div>
 
     <div class=side_left>
-        bruh
+        Pretend there are Ads here L
     
     </div>
     
     <div class=side_right>
-        bruh
+        Pretend there are Ads here R
     </div>
 
-    
+</div>
 
 </div>
 
 
+<script src="/scripts/node.js"></script>
 
 
 
 
 </div>
+<script src="https://unpkg.com/colcade@0/colcade.js"></script>
 
+<script>
+window.onload = function(){
+  var colc = new Colcade( '.grid', {
+  columns: '.grid-col',
+  items: '.grid-item'
+});
+}
+</script>
+
+<div class="loader">
+    <img src="/categories/Preloader/PreLoader.gif" alt="">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+
+<script>
+    function changeStyle(){
+        var element = document.getElementById("myDiv");
+        element.style.height = "fit";
+    }
+</script>
+
+<!--search-->
+<script>
+    function openPage() {
+        var x = document.getElementById("search").value;
+
+        if (x.toUpperCase() === 'aheago'.toUpperCase()){
+            window.open("/categories/iAheago.html");
+        }    
+
+        if (x.toUpperCase() === 'lewd'.toUpperCase()){
+            window.open("/videosites/mansheadexplodes.html");
+        }    
+
+        if (x === "Yuri") {
+            window.open("/customizedalert.html");
+        }
+
+    }
+</script>
+
+<script>
+    const gallery = document.getElementById('gallery')
+</script>
 </body>
 
 
@@ -177,8 +236,8 @@ document.elementgetbyid.style = sexy style css
 
 
 ~Jacob -->
-
+<script src="/scripts/coolpage.js"></script>
 
 
 </html>
-<!-- <button class= menubutton type="button">Browse</button> ->
+<!-- <button class= menubutton type="button">Browse</button> -->

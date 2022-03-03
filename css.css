@@ -405,6 +405,7 @@ p {
 .misccard4 {
     background-image: url(/thumbnail/TESTCARD1.jpg);
 }
+
 .ButtonCateg {
     opacity: 1;
     transition: 0.5s;
@@ -527,3 +528,390 @@ h5 {
     grid-template-columns: repeat(auto-fit);
 
 }
+
+/* new stuff */
+
+@media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+      -webkit-transform: translateY(8px) rotate(45deg);
+              transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+      -webkit-transform: translateY(-8px) rotate(-45deg);
+              transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      background-color: black;
+      width: 100%;
+      text-align: center;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      top: 0;
+    }
+    .nav-menu.active {
+      left: 0;
+      display: block;
+      position: fixed;
+      visibility: visible;
+    }
+    .nav-link {
+      text-decoration: none;
+      color: white;
+      font-weight: lighter;
+      font-size: 20px;
+      padding: 20px 20px 20px 20px;
+      display: inline-block;
+      opacity: 1;
+    }
+  }
+
+  .navbar {
+    height: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .navigation {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: center;
+  }
+
+  .navigation {
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    height: 80px;
+    z-index: 999;
+    width: 500px;
+    margin-bottom: 60px;
+    /*aligns navigation along the top*/
+  }
+  
+  .navigation {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    /*turns the color from purple to white (goat helped) yes and no*/
+  }
+
+  @media (max-width: 768px) {
+    .Homecateg {
+      display: none;
+    }
+  }
+
+  /* Hidden Button CSS */
+.ButtonCateg1 {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: black;
+    border-width: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Clarkson,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 0;
+    opacity: 1;
+    outline: 0;
+    padding: 1.5em 2.2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    -webkit-transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1), background-color 100ms cubic-bezier(0.694, 0, 0.335, 1), color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+    transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1), background-color 100ms cubic-bezier(0.694, 0, 0.335, 1), color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+  }
+  
+  .ButtonCateg1:before {
+    -webkit-animation: opacityFallbackOut .5s step-end forwards;
+            animation: opacityFallbackOut .5s step-end forwards;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-color: #1d1d1d;
+    -webkit-clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+            clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 100%;
+  }
+  
+  .ButtonCateg1:hover:before {
+    -webkit-animation: opacityFallbackIn 0s step-start forwards;
+            animation: opacityFallbackIn 0s step-start forwards;
+    -webkit-clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+            clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  }
+  
+  .ButtonCateg1:after {
+    background-color: #FFFFFF;
+  }
+  
+  .ButtonCateg1 span {
+    z-index: 1;
+    position: relative;
+  }
+  
+  /* b2 */
+  .ButtonCateg2 {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: black;
+    border-width: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Clarkson,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 0;
+    opacity: 1;
+    outline: 0;
+    padding: 1.5em 2.2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    -webkit-transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1), background-color 100ms cubic-bezier(0.694, 0, 0.335, 1), color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+    transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1), background-color 100ms cubic-bezier(0.694, 0, 0.335, 1), color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+  }
+  
+  .ButtonCateg2:before {
+    -webkit-animation: opacityFallbackOut .5s step-end forwards;
+            animation: opacityFallbackOut .5s step-end forwards;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-color: #1d1d1d;
+    -webkit-clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+            clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 100%;
+  }
+  
+  .ButtonCateg2:hover:before {
+    -webkit-animation: opacityFallbackIn 0s step-start forwards;
+            animation: opacityFallbackIn 0s step-start forwards;
+    -webkit-clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+            clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  }
+  
+  .ButtonCateg2:after {
+    background-color: #FFFFFF;
+  }
+  
+  .ButtonCateg2 span {
+    z-index: 1;
+    position: relative;
+  }
+  
+  /* b3 */
+  .ButtonCateg3 {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: black;
+    border-width: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Clarkson,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 0;
+    opacity: 1;
+    outline: 0;
+    padding: 1.5em 2.2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    -webkit-transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1), background-color 100ms cubic-bezier(0.694, 0, 0.335, 1), color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+    transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1), background-color 100ms cubic-bezier(0.694, 0, 0.335, 1), color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+  }
+  
+  .ButtonCateg3:before {
+    -webkit-animation: opacityFallbackOut .5s step-end forwards;
+            animation: opacityFallbackOut .5s step-end forwards;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-color: #1d1d1d;
+    -webkit-clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+            clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 100%;
+  }
+  
+  .ButtonCateg3:hover:before {
+    -webkit-animation: opacityFallbackIn 0s step-start forwards;
+            animation: opacityFallbackIn 0s step-start forwards;
+    -webkit-clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+            clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  }
+  
+  .ButtonCateg3:after {
+    background-color: #FFFFFF;
+  }
+  
+  .ButtonCateg3 span {
+    z-index: 1;
+    position: relative;
+  }
+  
+  .ButtonCateg {
+    color: white;
+    font-size: 12px;
+    padding: 10px 40px;
+    background: black;
+    border: 12;
+    border-radius: 0px;
+    margin-top: 15px;
+  }
+  
+  .linkanim {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .linkanim::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: currentColor;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+  }
+  
+  .linkanim:hover::after {
+    width: 100%;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s;
+    background-color: white;
+    color: black;
+  }
+  
+  .hide {
+    opacity: 0;
+    padding: 0px 0px;
+    border-radius: 0px;
+    font-size: 0px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    background: black;
+    color: white;
+    border: none;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+
+  .nav-menu {
+    visibility: hidden;
+  }
