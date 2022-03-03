@@ -236,6 +236,7 @@ h1 {
     display: block;
     position: fixed;
     visibility: visible;
+    margin-top: 0px;
   }
   .nav-link {
     text-decoration: none;
@@ -1123,5 +1124,12 @@ h5 {
 
 .misccard4 {
   background-image: url(/thumbnail/TESTCARD1.jpg);
+}
+
+@media (max-width: 768px) {
+  .card {
+    position: relative;
+    left: 25%;
+  }
 }
 /*# sourceMappingURL=image.css.map */
