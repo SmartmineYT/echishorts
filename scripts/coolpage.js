@@ -110,7 +110,9 @@ let images = [
   'BetaPreLoader.gif',
   'PreLoader.gif',
   'GVanillaPreLoader.gif',
-  'ILewdPreLoader.gif'
+  'ILewdPreLoader.gif',
+  'UploadPreLoader.gif',
+  'CommunityPreLoader.gif'
 ]
 
 let imagesLength = images.length;
