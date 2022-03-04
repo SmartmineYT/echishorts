@@ -30,13 +30,14 @@ img {
 
 .content h2 {
   margin: .2em .5em;
-  font-size: 1em;
+  font-size: 0.2em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .col {
     width: 50%;
     margin: 0% auto;
+    min-width: 500px;
   }
   h2 {
     margin: 3em 0%;
@@ -398,9 +399,51 @@ li a {
   display: row;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1000px) {
+  .col {
+    min-width: 800px;
+  }
+}
+
+@media (min-width: 1001px) {
   .col {
     min-width: 974px;
+  }
+}
+
+@media (max-width: 815px) {
+  .col {
+    min-width: 700px;
+  }
+}
+
+@media (max-width: 715px) {
+  .col {
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 615px) {
+  .col {
+    min-width: 500px;
+  }
+}
+
+@media (max-width: 515px) {
+  .col {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 415px) {
+  .col {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 315px) {
+  .col {
+    min-width: 200px;
   }
 }
 
@@ -1083,7 +1126,7 @@ h5 {
 }
 
 .videocard6 {
-  background-image: url(/thumbnail/VLOLICON.jfif);
+  background-image: url(/thumbnail/VBOOBS.jfif);
 }
 
 .videocard7 {
@@ -1129,13 +1172,62 @@ h5 {
 @media (max-width: 768px) {
   .card {
     position: relative;
-    left: 15%;
+    left: 10%;
   }
   .search {
     width: 300px;
   }
   .titlecol {
     width: 320px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card {
+    width: 180px;
+    height: 300px;
+    position: relative;
+    left: 5%;
+  }
+}
+
+@media (max-width: 815px) {
+  .card {
+    width: 300px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 715px) {
+  .card {
+    width: 250px;
+    height: 400px;
+    left: 50px;
+  }
+}
+
+@media (max-width: 615px) {
+  .card {
+    width: 200px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 515px) {
+  .card {
+    left: 100px;
+  }
+}
+
+@media (max-width: 415px) {
+  .card {
+    left: 50px;
+  }
+}
+
+@media (max-width: 315px) {
+  .card {
+    left: 5px;
   }
 }
 /*# sourceMappingURL=image.css.map */

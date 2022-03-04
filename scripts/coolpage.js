@@ -218,4 +218,7 @@ function openPage() {
     if (x.toUpperCase() === 'g/trap'.toUpperCase()){
       window.open("/categories/gtrap.html");
       }
+    else {
+      window.open("/categories/NothingHere.html");
+    }
 }
