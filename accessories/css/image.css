@@ -385,7 +385,7 @@ li a {
 
 @media (min-width: 320px) {
   .col {
-    min-width: 480px;
+    min-width: 320px;
   }
 }
 
@@ -1129,7 +1129,13 @@ h5 {
 @media (max-width: 768px) {
   .card {
     position: relative;
-    left: 25%;
+    left: 15%;
+  }
+  .search {
+    width: 300px;
+  }
+  .titlecol {
+    width: 320px;
   }
 }
 /*# sourceMappingURL=image.css.map */
