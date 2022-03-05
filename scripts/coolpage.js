@@ -71,6 +71,7 @@ window.addEventListener("load", function () {
   }, 3000);
 });
 
+
 /* next page */
 
 var start = 0;
@@ -128,97 +129,100 @@ image_show.src = `/categories/Preloader/${chosenImage}`
 function openPage() {
   var x = document.getElementById("search").value;
 
-    if (x.toUpperCase() === 'Home'.toUpperCase()){
-    window.open("/index.html");
+  if (x.toUpperCase() === 'Home'.toUpperCase()){
+    window.open("/index.html", "_self");
   }  
-  if (x.toUpperCase() === 'Images'.toUpperCase()){
-      window.open("/categories/Images.html");
+  else if (x.toUpperCase() === 'Images'.toUpperCase()){
+      window.open("/categories/Images.html", "_self");
   }    
-  if (x.toUpperCase() === 'Gifs'.toUpperCase()){
-      window.open("/categories/Gifs.html");
+  else if (x.toUpperCase() === 'Gifs'.toUpperCase()){
+      window.open("/categories/Gifs.html", "_self");
   }    
-  if (x.toUpperCase() === 'Misc'.toUpperCase()){
-    window.open("/categories/Misc.html");
+  else if (x.toUpperCase() === 'Misc'.toUpperCase()){
+    window.open("/categories/Misc.html", "_self");
   }
-   if (x.toUpperCase() === 'i/aheago'.toUpperCase()){
-    window.open("/categories/iaheago.html");
+   else if (x.toUpperCase() === 'i/aheago'.toUpperCase()){
+    window.open("/categories/iaheago.html", "_self");
     }   
-   if (x.toUpperCase() === 'i/lewd'.toUpperCase()){
-    window.open("/categories/ilewd.html");
+   else if (x.toUpperCase() === 'i/lewd'.toUpperCase()){
+    window.open("/categories/ilewd.html", "_self");
     }   
-   if (x.toUpperCase() === 'i/yuri'.toUpperCase()){
-    window.open("/categories/iyuri.html");
+   else if (x.toUpperCase() === 'i/yuri'.toUpperCase()){
+    window.open("/categories/iyuri.html", "_self");
     }   
-   if (x.toUpperCase() === 'i/big-boobs'.toUpperCase()){
-    window.open("/categories/ibig-boobs.html");
+   else if (x.toUpperCase() === 'i/big-boobs'.toUpperCase()){
+    window.open("/categories/ibig-boobs.html", "_self");
     }   
-   if (x.toUpperCase() === 'i/big boobs'.toUpperCase()){
-    window.open("/categories/ibig-boobs.html");
+   else if (x.toUpperCase() === 'i/big boobs'.toUpperCase()){
+    window.open("/categories/ibig-boobs.html", "_self");
     }   
-   if (x.toUpperCase() === 'i/gang-bang'.toUpperCase()){
-    window.open("/categories/igang-bang.html");
+   else if (x.toUpperCase() === 'i/gang-bang'.toUpperCase()){
+    window.open("/categories/igang-bang.html", "_self");
     }
-   if (x.toUpperCase() === 'i/gang bang'.toUpperCase()){
-    window.open("/categories/igang-bang.html");
+   else if (x.toUpperCase() === 'i/gang bang'.toUpperCase()){
+    window.open("/categories/igang-bang.html", "_self");
     }
-   if (x.toUpperCase() === 'i/men'.toUpperCase()){
-    window.open("/categories/imen.html");
+   else if (x.toUpperCase() === 'i/men'.toUpperCase()){
+    window.open("/categories/imen.html", "_self");
     }
-   if (x.toUpperCase() === 'i/vanilla'.toUpperCase()){
-    window.open("/categories/ivanilla.html");
+   else if (x.toUpperCase() === 'i/vanilla'.toUpperCase()){
+    window.open("/categories/ivanilla.html", "_self");
     }
-   if (x.toUpperCase() === 'i/solo'.toUpperCase()){
-    window.open("/categories/isolo.html");
+   else if (x.toUpperCase() === 'i/solo'.toUpperCase()){
+    window.open("/categories/isolo.html", "_self");
     }
-   if (x.toUpperCase() === 'i/public'.toUpperCase()){
-    window.open("/categories/ipublic.html");
+   else if (x.toUpperCase() === 'i/public'.toUpperCase()){
+    window.open("/categories/ipublic.html", "_self");
     }
-   if (x.toUpperCase() === 'i/anal'.toUpperCase()){
-    window.open("/categories/ianal.html");
+   else if (x.toUpperCase() === 'i/anal'.toUpperCase()){
+    window.open("/categories/ianal.html", "_self");
     }
-   if (x.toUpperCase() === 'i/threesome'.toUpperCase()){
-    window.open("/categories/ithreesome.html");
+   else if (x.toUpperCase() === 'i/threesome'.toUpperCase()){
+    window.open("/categories/ithreesome.html", "_self");
     }
-   if (x.toUpperCase() === 'i/ass'.toUpperCase()){
-    window.open("/categories/iass.html");
+   else if (x.toUpperCase() === 'i/ass'.toUpperCase()){
+    window.open("/categories/iass.html", "_self");
     }
-    if (x.toUpperCase() === 'g/vanilla'.toUpperCase()){
-      window.open("/categories/gvanilla.html");
+    else if (x.toUpperCase() === 'g/vanilla'.toUpperCase()){
+      window.open("/categories/gvanilla.html", "_self");
       }
-    if (x.toUpperCase() === 'g/solo'.toUpperCase()){
-      window.open("/categories/gsolo.html");
+    else if (x.toUpperCase() === 'g/solo'.toUpperCase()){
+      window.open("/categories/gsolo.html", "_self");
       }
-    if (x.toUpperCase() === 'g/blow-job'.toUpperCase()){
-      window.open("/categories/gblow-job.html");
+    else if (x.toUpperCase() === 'g/blow-job'.toUpperCase()){
+      window.open("/categories/gblow-job.html", "_self");
       }
-    if (x.toUpperCase() === 'g/bdsm'.toUpperCase()){
-      window.open("/categories/gbdsm.html");
+    else if (x.toUpperCase() === 'g/bdsm'.toUpperCase()){
+      window.open("/categories/gbdsm.html", "_self");
       } 
-    if (x.toUpperCase() === 'g/yuri'.toUpperCase()){
-      window.open("/categories/gyuri.html");
+    else if (x.toUpperCase() === 'g/yuri'.toUpperCase()){
+      window.open("/categories/gyuri.html", "_self");
       }
-    if (x.toUpperCase() === 'g/riding'.toUpperCase()){
-      window.open("/categories/griding.html");
+    else if (x.toUpperCase() === 'g/boobs'.toUpperCase()){
+      window.open("/categories/gboobs.html", "_self");
       }
-    if (x.toUpperCase() === 'g/gang-bang'.toUpperCase()){
-      window.open("/categories/ggang-bang.html");
+    else if (x.toUpperCase() === 'g/riding'.toUpperCase()){
+      window.open("/categories/griding.html", "_self");
       }
-    if (x.toUpperCase() === 'g/gang bang'.toUpperCase()){
-      window.open("/categories/ggang-bang.html");
+    else if (x.toUpperCase() === 'g/gang-bang'.toUpperCase()){
+      window.open("/categories/ggang-bang.html", "_self");
       }
-    if (x.toUpperCase() === 'g/threesome'.toUpperCase()){
-      window.open("/categories/gthreesome.html");
+    else if (x.toUpperCase() === 'g/gang bang'.toUpperCase()){
+      window.open("/categories/ggang-bang.html", "_self");
       }
-    if (x.toUpperCase() === 'g/milf'.toUpperCase()){
-      window.open("/categories/gmilf.html");
+    else if (x.toUpperCase() === 'g/threesome'.toUpperCase()){
+      window.open("/categories/gthreesome.html", "_self");
       }
-    if (x.toUpperCase() === 'g/monster'.toUpperCase()){
-      window.open("/categories/gmonster.html");
+    else if (x.toUpperCase() === 'g/milf'.toUpperCase()){
+      window.open("/categories/gmilf.html", "_self");
       }
-    if (x.toUpperCase() === 'g/trap'.toUpperCase()){
-      window.open("/categories/gtrap.html");
+    else if (x.toUpperCase() === 'g/monster'.toUpperCase()){
+      window.open("/categories/gmonster.html", "_self");
+      }
+    else if (x.toUpperCase() === 'g/trap'.toUpperCase()){
+      window.open("/categories/gtrap.html", "_self");
       }
     else {
-      window.open("/categories/NothingHere.html");
+        window.open("/categories/NothingHere.html", "_self");
     }
 }

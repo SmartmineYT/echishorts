@@ -70,12 +70,12 @@
     <div class="row">
         <div class="titlecol">
             <h1 class=frontpageh>Echishorts</h1>
-            <form onchange="" class="search">
-                <input type="search" class="search__input" id= "search" placeholder="Search Hints: I/ or G/" onchange="openPage()">
-                <button class="search__button">
+            <div class="search">
+                <input type="search" class="search__input" id= "search" placeholder="Search Hints: I/ or G/">
+                <button class="search__button" type='button'>
                     <i class="fas fa-search search__icon" id='link' onclick="openPage()"></i>
                 </button>
-            </form>
+            </div>
             <br>
 <br>
 <br>
@@ -96,7 +96,7 @@ search = search.replace(" ","")
 
 </div>
 
-        <div class="col">
+        <div class="col" id = col>
         
             <h1 class="featured">Aheago</h1>
             <br></br>
@@ -104,7 +104,7 @@ search = search.replace(" ","")
 <div class="pagecontainer">
                 <a href="#" class="prev bstyling" style="
                 margin-bottom: 10px">PREV PAGE</a>
-                <a href="#" class="next bstyling" style="
+                <a href="#" onclick="gridrefresh()" class="next bstyling" style="
                 margin-bottom: 10px;">NEXT PAGE</a>
             </div>
                 <div class="grid">
