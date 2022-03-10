@@ -118,6 +118,7 @@ img {
         position: fixed;
         top: 0;
         z-index: 99;
+        padding-left: 50px;
     }
 
 }
@@ -357,7 +358,7 @@ li a {
     list-style: none;
     display: inline-block;
     height: 80px;
-    z-index: 999;
+    z-index: 98;
     width: 500px;
     margin-bottom: 60px;
     /*aligns navigation along the top*/ 
