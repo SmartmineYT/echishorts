@@ -70,12 +70,16 @@
     <div class="row">
         <div class="titlecol">
             <h1 class=frontpageh>Echishorts</h1>
-            <div class="search">
-                <input type="search" class="search__input" id= "search" placeholder="Search Hints: I/ or G/">
-                <button class="search__button" type='button'>
-                    <i class="fas fa-search search__icon" id='link' onclick="openPage()"></i>
-                </button>
-            </div>
+            <div class="wrapper">
+                <div class="search__input">
+                  <a href="" target="_blank" hidden></a>
+                  <input type="text" id="search" autocomplete="off" placeholder="Search Hints: I/ or G/">
+                  <div class="autocom-box">
+                    <!-- here list are inserted from javascript -->
+                  </div>
+                  <div class="icon" onclick="openPage()"><i class="fas fa-search search_icon"></i></div>
+                </div>
+              </div>
             <br>
 <br>
 <br>
@@ -557,7 +561,7 @@ window.onload = function(){
 
 ~Jacob -->
 <script src="/scripts/coolpage.js"></script>
-
+<script src="/scripts/suggestions.js"></script>
 
 </html>
 <!-- <button class= menubutton type="button">Browse</button> -->

@@ -70,12 +70,16 @@
     <div class="row">
         <div class="titlecol">
             <h1 class=frontpageh>Echishorts</h1>
-            <div class="search">
-                <input type="search" class="search__input" id= "search" placeholder="Search Hints: I/ or G/">
-                <button class="search__button" type='button'>
-                    <i class="fas fa-search search__icon" id='link' onclick="openPage()"></i>
-                </button>
-            </div>
+            <div class="wrapper">
+                <div class="search__input">
+                  <a href="" target="_blank" hidden></a>
+                  <input type="text" id="search" autocomplete="off" placeholder="Search Hints: I/ or G/">
+                  <div class="autocom-box">
+                    <!-- here list are inserted from javascript -->
+                  </div>
+                  <div class="icon" onclick="openPage()"><i class="fas fa-search search_icon"></i></div>
+                </div>
+              </div>
             <br>
 <br>
 <br>
@@ -128,13 +132,13 @@ search = search.replace(" ","")
                 <h5>Just a test bro</h5>
                 <p>1/23/2022</p>
             </div>
-            <div onclick="window.open('/categories/bdsm.html','_self')" class="card videocard4">
+            <div onclick="window.open('/categories/gyuri.html','_self')" class="card videocard4">
                 <h5 class=cardheader4>Just a test bro</h5>
                 <p>1/23/2022</p>
 
             
 </div>
-<div onclick="window.open('/categories/gyuri.html','_self')" class="card videocard5" id="card">
+<div onclick="window.open('/categories/ganal.html','_self')" class="card videocard5" id="card">
     <h5>Just a test bro</h5>
     <p>1/23/2022</p>
 </div>
@@ -224,24 +228,6 @@ window.onload = function(){
 </script>
 
 <!--search-->
-<script>
-    function openPage() {
-        var x = document.getElementById("search").value;
-
-        if (x.toUpperCase() === 'aheago'.toUpperCase()){
-            window.open("/categories/iAheago.html");
-        }    
-
-        if (x.toUpperCase() === 'lewd'.toUpperCase()){
-            window.open("/videosites/mansheadexplodes.html");
-        }    
-
-        if (x === "Yuri") {
-            window.open("/customizedalert.html");
-        }
-
-    }
-</script>
 
 <script>
     const gallery = document.getElementById('gallery')
@@ -255,7 +241,7 @@ window.onload = function(){
 
 ~Jacob -->
 <script src="/scripts/coolpage.js"></script>
-
+<script src="/scripts/suggestions.js"></script>
 
 </html>
 <!-- <button class= menubutton type="button">Browse</button> -->

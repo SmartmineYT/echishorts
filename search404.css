@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
   }
+
   a{
     color: #777;
     border-bottom: 3px dashed #777;
@@ -10,7 +11,7 @@
     font-weight: bold;
   }
   body{
-    background: #eee;
+    background: black;
     display:flex;
     align-items: center;
     text-align: center;
