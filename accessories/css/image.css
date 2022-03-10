@@ -122,6 +122,11 @@ img {
   .Homecateg {
     display: none;
   }
+  .wrapper {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+  }
 }
 
 @media (max-width: 1200px) {
