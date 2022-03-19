@@ -1279,3 +1279,31 @@ h5 {
     left: 5px;
   }
 }
+
+/* the css you change */
+
+.my-flex-columns {
+  display: flex;
+  flex-flow: column wrap;
+  height: 80vh;
+}
+
+.my-flex-item {
+  flex: 0 1 100px;
+  contain: strict;
+}
+
+
+.my-flex-item:nth-child(3n+2) { order: 1 }
+.my-flex-item:nth-child(3n+1) { order: 2 }
+.my-flex-item:nth-child(3n)   { order: 3 }
+
+.my-flex-columns::before,
+.my-flex-columns::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+
+/* the css you change bottom*/

@@ -36,6 +36,7 @@
         </div></ul>
 
 <ul class="nav-menu">
+    <br>
         <li class="navitem">
             <a href="/index.html" class="nav-link">Home</a>
         </li>
@@ -503,14 +504,15 @@ document.elementgetbyid.style = sexy style css
 
 
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/colcade@0/colcade.js"></script>
 
 <script>
 window.onload = function(){
-  var colc = new Colcade( '.grid', {
-  columns: '.grid-col',
-  items: '.grid-item'
-});
+    $('.grid').colcade({
+        columns: '.grid-col',
+        items: '.grid-item'
+    });
 }
 </script>
 
@@ -519,7 +521,6 @@ window.onload = function(){
     <img id="image_show"/>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 
 
@@ -563,6 +564,6 @@ window.onload = function(){
 ~Jacob -->
 <script src="/scripts/coolpage.js"></script>
 <script src="/scripts/suggestions.js"></script>
-
+<script src="/scripts/gallery.js"></script>
 </html>
 <!-- <button class= menubutton type="button">Browse</button> -->

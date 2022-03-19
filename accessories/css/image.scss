@@ -66,9 +66,7 @@ img {
         padding: 0 .5em;
     }
 
-    img {
-        margin-bottom: .8em;
-    }
+
 
     .content {
         opacity: 0;
@@ -117,7 +115,7 @@ img {
     .wrapper {
         position: fixed;
         top: 0;
-        z-index: 99;
+        z-index: 97;
         padding-left: 50px;
     }
 
@@ -146,7 +144,6 @@ img {
 
 
 *{
-
     padding: 0%;
     font-family: 'Dongle', sans-serif;
     font-family: 'Nunito Sans', sans-serif;
@@ -206,9 +203,14 @@ h1 {
     }
 }
 
+.nav-menu.active {
+    z-index: 100;
+  }
+
 @media (max-width:768px) {
     .hamburger {
         display: block;
+        z-index: 101;
         
     }
     .hamburger.active .bar:nth-child(2) {
@@ -235,6 +237,7 @@ h1 {
         transition: 0.5s;
         top: 0;
         height: 100%;
+        z-index: 102;
       }
       
       .nav-menu.active {
@@ -541,12 +544,13 @@ p {
     height: 2px;
     background: currentColor;
     transition: width 0.3s;
+    background-color: #1e90ff;
 }
 
 .linkanim:hover::after {
     width: 100%;
     transition: width 0.3s;
-    background-color: rgb(255, 255, 255);
+    background-color: #1e90ff;
     color: black;
 }
     
@@ -741,7 +745,7 @@ h5 {
   .ButtonCateg1:before {
     animation: opacityFallbackOut .5s step-end forwards;
     backface-visibility: hidden;
-    background-color: #1d1d1d;
+    background-color: #1e90ff;
     clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
     content: "";
     height: 100%;
@@ -802,7 +806,7 @@ h5 {
   .ButtonCateg2:before {
     animation: opacityFallbackOut .5s step-end forwards;
     backface-visibility: hidden;
-    background-color: #1d1d1d;
+    background-color: #1e90ff;
     clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
     content: "";
     height: 100%;
@@ -863,7 +867,7 @@ h5 {
   .ButtonCateg3:before {
     animation: opacityFallbackOut .5s step-end forwards;
     backface-visibility: hidden;
-    background-color: #1d1d1d;
+    background-color: #1e90ff;
     clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
     content: "";
     height: 100%;
@@ -961,7 +965,7 @@ h5 {
 
  /*homepage cards*/
 .homecard1 {
-    background-image: url(/thumbnail/MASTURBATION.jfif);
+    background-image: url(/thumbnail/VVANILLA.jfif);
 }
 
 .homecard2 {
@@ -969,7 +973,7 @@ h5 {
 }
 
 .homecard3 {
-    background-image: url(/thumbnail/GANAL.jfif);
+    background-image: url(/thumbnail/MASTURBATION.jfif);
 }
 
 .homecard4 {
@@ -1038,6 +1042,7 @@ h5 {
 .videocard4 {
     background-image: url(/thumbnail/VYURI.jfif);
 }
+
 .videocard5 {
     background-image: url(/thumbnail/GANAL.jfif);
 }
@@ -1325,3 +1330,202 @@ h5 {
   color: #000;
   cursor: pointer;
 }
+
+div.Recently-Uploaded {
+    display: flex;
+    flex-direction: row;
+    width: 10px;
+    margin: 10px;
+
+    .Recent-title {
+        color: white;
+    }
+    
+    .Recent-title2 {
+        color: #1e90ff;
+        padding-left: 5px;
+    }
+ 
+}
+
+.hbstyling {
+    position: relative;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid rgba(30,144,255, 1);
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: rgba(30,144,255, 1);
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0, auto, 10px;
+    min-width: 88px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    justify-content: center;
+    padding-top: 2.5px;
+    margin-left: 5px;
+  }
+  
+  .hbstyling:disabled {
+    pointer-events: none;
+  }
+  
+  .hbstyling:hover {
+    color: rgba(30,144,255, 1);
+    background-color: rgba(30,144,255, 0.2); 
+    box-shadow: rgba(30,144,255, 1);
+  }
+  
+  .hbstyling:active {
+    box-shadow: none;
+  }
+
+  /* home masonry */
+
+  .masonry { /* Masonry container */
+    -webkit-column-count: 5;
+  -moz-column-count: 5;
+  column-count: 5;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+   margin: 1.5em;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+}
+.item {
+    display: inline-block;
+    background: #1e90ff;
+    padding: .4em;
+    padding-bottom: 0;
+    margin: 0 0 1.5em;
+    width: 100%;
+	-webkit-transition:1s ease all;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #1e90ff80;
+    border-radius: 2px;
+}
+.item img{max-width:100%;}
+
+@media only screen and (max-width: 414px){
+    .masonry {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .navigation {
+        width: 0;
+    }
+}
+
+@media only screen and (min-width: 415px)  and (max-width: 615px){
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 616px) and (max-width: 768px){
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+@media only screen and (min-width: 1201px) {
+    .masonry {
+        -moz-column-count: 5;
+        -webkit-column-count: 5;
+        column-count: 5;
+    }
+}
+
+/* home masonry end */
+
+/* home hover */
+
+.item {
+
+    position: relative;
+  }
+  
+  .box .bottom1 {
+    background: rgba(248, 177, 149, 1);
+  }
+  
+  .box .bottom2 {
+    background: rgba(192, 108, 132, 1);
+  }
+  
+  .item .bottom3 {
+    background: #000000;
+  }
+  
+  .item .top {
+    top: 0;
+    opacity: 0;
+    position: absolute;
+    padding: 15px;
+    transition: 1s;
+    left: 50%;
+    top: 50%;  
+    transform: translate(-50%, -50%);
+  }
+  
+  .item:hover .top {
+    opacity: 1;
+    transition: .5s;
+    cursor:pointer;
+  }
+
+.item:hover .bottom3 {
+    background: #1e90ff;
+    transition: .5s;  
+   }
+   
+.top h3 {
+    color: #1e90ff;
+    bottom: 0;
+    position: absolute;
+    padding-bottom: 15px;
+}
+
+.top {
+    background-image: linear-gradient(to bottom, transparent, #010101);
+    width: 100%;
+    height: 100%;
+    border-bottom: 10px;
+}
+
+/* home hover end*/
+
+/* footer start */
+
+/* footer end*/
