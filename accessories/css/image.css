@@ -455,7 +455,7 @@ li a {
 
 @media (max-width: 315px) {
   .col {
-    min-width: 200px;
+    min-width: 260px;
   }
 }
 
@@ -1163,6 +1163,9 @@ h5 {
     position: relative;
     left: 10%;
   }
+  .navbar {
+    height: 50px;
+  }
   .search {
     width: 300px;
   }
@@ -1191,7 +1194,7 @@ h5 {
   .card {
     width: 250px;
     height: 400px;
-    left: 50px;
+    left: 30px;
   }
 }
 
@@ -1199,23 +1202,30 @@ h5 {
   .card {
     width: 200px;
     height: 350px;
+    left: 30px;
   }
 }
 
 @media (max-width: 515px) {
   .card {
-    left: 100px;
+    width: 150px;
+    height: 300px;
+    left: 40px;
   }
 }
 
 @media (max-width: 415px) {
   .card {
-    left: 50px;
+    width: 135px;
+    height: 275px;
+    left: 15px;
   }
 }
 
 @media (max-width: 315px) {
   .card {
+    width: 125px;
+    height: 250px;
     left: 5px;
   }
 }
@@ -1523,10 +1533,14 @@ div.Recently-Uploaded .Recent-title2 {
   max-width: 100%;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
   .masonry {
-    -webkit-column-count: 1;
-    column-count: 1;
+    -webkit-column-count: 2;
+    column-count: 2;
+    margin: 0;
+  }
+  div.Recently-Uploaded {
+    margin-left: 0;
   }
 }
 
