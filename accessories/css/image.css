@@ -1530,7 +1530,7 @@ div.Recently-Uploaded .Recent-title2 {
 }
 
 @media only screen and (max-width: 768px) {
-  .navigation {
+  .navbar {
     width: 0;
   }
 }
@@ -1620,11 +1620,6 @@ div.Recently-Uploaded .Recent-title2 {
   width: 100%;
   height: 100%;
   border-bottom: 10px;
-}
-
-.flexhomebr {
-  width: 100%;
-  padding-bottom: 50px;
 }
 
 /* home hover end*/
