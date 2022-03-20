@@ -201,6 +201,7 @@ h1 {
         padding: 0;
         border: 10px;
     }
+
 }
 
 .nav-menu.active {
@@ -1123,7 +1124,7 @@ h5 {
 @media (max-width:1200px) { 
     .card {
         width: 180px;
-        height: 300px;
+        height: 325px;
         position: relative;
         left: 15px;
     }
@@ -1139,7 +1140,7 @@ h5 {
 @media (max-width:715px) { 
     .card {
         width: 250px;
-        height: 400px;
+        height: 450px;
         left: 30px;
     }
 }
@@ -1150,7 +1151,12 @@ h5 {
         height: 350px;
         left: 30px;
     }
+    .homecard {
+        left: 25px;
+    }
 }
+
+
 
 @media (max-width:515px) { 
     .card {
@@ -1158,23 +1164,41 @@ h5 {
         height: 300px;
         left: 50px;
     }
-}
-
-
-@media (max-width:415px) { 
-        .card {
-            width: 135px;
-            height: 275px;
-            left: 25px;
+    .homecard {
+        left: 27.5px;
     }
 }
 
+@media (max-width:500px) { 
+    .card {
+        width: 165px;
+        height: 300px;
+        left: 50px;
+    }
+    .homecard {
+        left: 47.5px;
+    }
+}
+
+@media (max-width:415px) { 
+        .card {
+            width: 147px;
+            height: 275px;
+            left: 15px;
+    }
+    .homecard {
+        left: 20px;
+    }
+}
 
 @media (max-width:315px) { 
     .card {
         width: 125px;
         height: 250px;
         left: 5px;
+    }
+    .homecard {
+        left: 20px;
     }
 }
 
@@ -1462,6 +1486,9 @@ div.Recently-Uploaded {
 @media only screen and (max-width: 768px){
     .navbar {
         width: 0;
+    }
+    .hbstyling { 
+    padding-top: 5px;
     }
 }
 
