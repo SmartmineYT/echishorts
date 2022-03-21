@@ -1248,7 +1248,7 @@ h5 {
     left: 2.5px;
   }
   .homecard {
-    left: 13.5px;
+    left: 13px;
   }
 }
 
@@ -1687,7 +1687,7 @@ div.Recently-Uploaded .Recent-title2 {
 #mobilecategories {
   width: 20em;
   background-color: #1e90ff;
-  border: 1px solid #1e90ff80;
+  border: 1px solid #1e90ff;
   padding: .5em;
   margin-left: auto;
   margin-right: auto;
@@ -1696,15 +1696,15 @@ div.Recently-Uploaded .Recent-title2 {
   font-weight: 700;
   color: #fff;
   cursor: pointer;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1e90ff));
-  background-image: linear-gradient(top, #1e90ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1e90ff), to(#1e90ff80));
+  background-image: linear-gradient(top, #1e90ff, #1e90ff80);
   border-radius: 3px;
   font-family: 'PT Sans', sans-serif;
   margin-bottom: 20px;
 }
 
 #mobilecategories:hover {
-  background-color: #1e90ff80;
+  background-color: #1e90ff;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1e90ff), to(#1e90ff80));
   background-image: linear-gradient(top, #1e90ff, #1e90ff80);
   -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
