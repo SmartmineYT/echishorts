@@ -202,3 +202,45 @@ function openPage() {
         window.open("/categories/NothingHere.html", "_self");
     }
 }
+
+//update 14/11/2017
+
+//fixed nav bar
+window.addEventListener('scroll',()=>{
+	let scroll = document.documentElement.scrollTop || document.body.scrollTop,
+		 menu = document.getElementsByClassName('menu')
+	
+	//update 19/11/2017
+	scroll >= 48
+		? menu[0].classList.add('fixed')
+		: menu[0].classList.remove('fixed')
+})
+
+/* */
+const openPopupButtons = document.querySelectorAll('[data-popup-target]')
+const closePopupButtons = document.querySelectorAll('[data-close-target]')
+const popupbutton = document.querySelectorAll('popup');
+
+openPopupButtons.forEach(button => {
+button.addEventListener('click', () => {
+  const popupall = document.querySelectorAll('.popup-overlay')
+  popupall .forEach(popup => {
+    openPopup(popup)
+  })
+})
+})
+
+function openPopup(popup) {
+  if (popup == null) return
+  popup.classList.add('active')
+}
+
+var els = document.getElementsByClassName('popup-overlay active')
+
+function closePopup() {
+  while (els[0]) {
+    els[0].classList.remove('active')
+  }
+}
+
+/* */

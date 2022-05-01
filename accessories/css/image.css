@@ -1658,7 +1658,6 @@ div.Recently-Uploaded .Recent-title2 {
   opacity: 1;
   -webkit-transition: .5s;
   transition: .5s;
-  cursor: pointer;
 }
 
 .item:hover .bottom3 {
@@ -1717,6 +1716,123 @@ div.Recently-Uploaded .Recent-title2 {
 }
 
 /* home show more end */
+/* homepage card download and info start */
+/**
+* Ink function
+* "Mix" the desired color with white in a certain proportion (percentage).
+ **/
+.btn-close-profile {
+  color: #1e90ff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0.2em;
+  border-color: #1e90ff;
+}
+
+.btn-close-profile:hover {
+  color: #52a9ff;
+  -webkit-box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 13px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 13px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.btn-download {
+  color: #1e90ff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0.2em;
+  font-size: 16px;
+}
+
+.btn-download:hover {
+  color: #1e90ff;
+  -webkit-box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 13px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 13px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.btn-info {
+  color: #1e90ff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0.2em;
+  font-size: 16px;
+}
+
+.btn-info:hover {
+  color: #1e90ff;
+  -webkit-box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 13px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 13px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.btn-round {
+  border-radius: 50%;
+}
+
+.btn-icon-only {
+  height: 45px;
+  width: 45px;
+  padding: 8px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* homepage card download and info end */
+div.top .popup-overlay {
+  /*Hides pop-up when there is no "active" class*/
+  position: relative;
+  background: black;
+  border: 3px solid #1e90ff;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  z-index: 998;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+div.top .popup-overlay.active {
+  /*displays pop-up when "active" class is present*/
+  visibility: visible;
+  text-align: center;
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+div.top h6 {
+  font-size: 1.5vh;
+  color: #1e90ff;
+}
+
+div.top .popup-content {
+  /*Hides pop-up content when there is no "active" class */
+  visibility: hidden;
+  background: #ffffff;
+  border: 3px solid #666666;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+div.top .popup-content.active {
+  /*Shows pop-up content when "active" class is present */
+  visibility: visible;
+}
+
+/* end */
+/*popup button*/
+#popup {
+  opacity: 0;
+}
+
+#popup.active {
+  opacity: 1;
+}
+
+/*popup button end*/
 /* footer start */
 /* footer end*/
 /*# sourceMappingURL=image.css.map */
