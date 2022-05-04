@@ -1,8 +1,8 @@
 var start = 0;
-var nb = 20;
+var nb = 60;
 var end = start + nb;
-var length = $('.grid img').length;
-var list = $('.grid img');
+var length = $('.grid img, .top, .item').length;
+var list = $('.grid img, .top, .item');
 
 list.hide().filter(':lt('+(end)+')').show();
 
