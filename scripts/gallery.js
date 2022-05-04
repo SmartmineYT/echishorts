@@ -29,6 +29,6 @@ $('.prev, .next').click(function(e){
 
   $(".grid").colcade("destroy").colcade({
       columns: '.grid-col',
-      items: '.grid-item'
+      items: '.grid-item .top, .item'
   });
 });

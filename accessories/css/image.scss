@@ -122,6 +122,7 @@ img {
     }
     .col {
         padding: 20px;
+        padding-left: 0px;
     }
 
     .side_left{
@@ -196,6 +197,11 @@ h1 {
         border: 10px;
     }
 
+}
+
+.grid-item {
+    margin: 8px;
+    margin-bottom: 16px;
 }
 
 .nav-menu.active {
