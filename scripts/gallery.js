@@ -32,3 +32,10 @@ $('.prev, .next').click(function(e){
       items: '.grid-item, item bottom bottom3'
   });
 });
+
+window.onload = function () {
+  $('.grid').colcade({
+      columns: '.grid-col',
+      items: '.grid-item, .item bottom bottom3'
+  });
+}
