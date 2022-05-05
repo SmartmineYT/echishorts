@@ -29,13 +29,20 @@ $('.prev, .next').click(function(e){
 
   $(".grid").colcade("destroy").colcade({
       columns: '.grid-col',
-      items: '.grid-item, item bottom bottom3'
+      items: '.grid-item'
   });
 });
 
 window.onload = function () {
   $('.grid').colcade({
       columns: '.grid-col',
-      items: '.grid-item, .img'
+      items: '.grid-item'
   });
+}
+
+window.onload = function () {
+$(".grid").colcade("destroy").colcade({
+  columns: '.grid-col',
+  items: '.grid-item'
+});
 }
