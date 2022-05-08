@@ -44,5 +44,5 @@ window.onload = function () {
 $(".grid").colcade("destroy").colcade({
   columns: '.grid-col',
   items: '.grid-item'
-});
+}, 2000);
 }
