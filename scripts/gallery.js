@@ -37,12 +37,12 @@ window.onload = function () {
   $('.grid').colcade({
       columns: '.grid-col',
       items: '.grid-item'
-  });
+  }, 2000);
 }
 
 window.onload = function () {
-$(".grid").colcade("destroy").colcade({
-  columns: '.grid-col',
-  items: '.grid-item'
-}, 2000);
-}
+  $(".grid").colcade("destroy").colcade({
+    columns: '.grid-col',
+    items: '.grid-item'
+  });
+  }
