@@ -1,8 +1,8 @@
 var start = 0;
 var nb = 60;
 var end = start + nb;
-var length = $('.grid img, .top, .item').length;
-var list = $('.grid img, .top, .item');
+var length = $('.grid img, .top, .item, .popup-overlay').length;
+var list = $('.grid img, .top, .item, .popup-overlay');
 
 list.hide().filter(':lt('+(end)+')').show();
 
@@ -37,7 +37,7 @@ window.onload = function () {
   $('.grid').colcade({
       columns: '.grid-col',
       items: '.grid-item'
-  }, 2000);
+  });
 }
 
 window.onload = function () {
