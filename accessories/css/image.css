@@ -1564,10 +1564,7 @@ div.Recently-Uploaded .Recent-title2 {
   border-radius: 2px;
 }
 
-.item img {
-  max-width: 100%;
-}
-
+/* .item img{max-width:100%;} */
 @media only screen and (max-width: 415px) {
   .masonry {
     -webkit-column-count: 2;
