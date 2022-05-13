@@ -1,8 +1,8 @@
 var start = 0;
 var nb = 60;
 var end = start + nb;
-var length = $('.grid img, .top, .item, .popup-overlay').length;
-var list = $('.grid img, .top, .item, .popup-overlay');
+var length = $('.cimg, .top, .item, .popup-overlay').length;
+var list = $('.cimg, .top, .item, .popup-overlay');
 
 list.hide().filter(':lt('+(end)+')').show();
 
