@@ -1846,7 +1846,6 @@ div.top .popup-content.active {
 /*popup button end*/
 /* new bar */
 .menu-bar {
-  top: 0;
   position: fixed;
   height: -webkit-fit-content;
   height: -moz-fit-content;
