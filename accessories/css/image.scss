@@ -102,6 +102,9 @@ img {
 @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Nunito+Sans:wght@900&display=swap');
 
 @media (max-width: 768px) {
+    .menu-bar {
+        margin: 50px 0 0 50vw;
+    }
     .Homecateg {
         display: none;
     }
@@ -209,10 +212,12 @@ h1 {
   }
 
 @media (max-width:768px) {
+    .menu-bartop {
+        visibility: hidden;
+    }
     .hamburger {
         display: block;
         z-index: 101;
-        
     }
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
@@ -372,7 +377,6 @@ li a {
 
     color: black;
     text-decoration: none;
-    font-size: 13px;
     /*turns the color from purple to white (goat helped) yes and no*/
 }
 
@@ -1629,6 +1633,8 @@ div.Recently-Uploaded {
 
 /* homepage card download and info start */
 
+
+
 /**
 * Ink function
 * "Mix" the desired color with white in a certain proportion (percentage).
@@ -1755,6 +1761,59 @@ div.top {
 }
 
 /*popup button end*/
+
+/* new bar */
+
+.menu-bar {
+    li {
+      flex: 1;
+    }
+        top: 0;
+        position: fixed;
+        height: fit-content;
+        z-index: 99;
+        display: inline-flex;
+        background-color: rgba(0, 0, 0, .4);
+        -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);  
+        align-items: center;
+        padding: 0 10px;
+      transform: translateX(-50%);
+        li {
+            list-style: none;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            padding: 12px 16px;
+            margin: 0 8px;
+            position: relative;
+            cursor: pointer;
+            white-space: nowrap;
+            &::before {
+                content: " ";
+                position: absolute;
+                top: 0;
+                left:0;
+                height:100%;
+                width: 100%;
+                z-index:-1;
+                transition: .5s;
+    
+            }
+                &:hover {
+                    &::before {
+                        /*background: linear-gradient(to bottom, #e8edec, #0190ec);*/
+                        background-color: #1e90ff;
+                            box-shadow: 0px 3px 20px 0px black;
+                            transform: scale(1);
+                    }
+                    color: black;
+            }
+        }
+    
+    }
+
+/* new bar end */
 
 /* footer start */
 

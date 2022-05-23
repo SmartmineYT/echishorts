@@ -46,4 +46,3 @@ window.onload = function () {
     items: '.grid-item'
   });
   }
-

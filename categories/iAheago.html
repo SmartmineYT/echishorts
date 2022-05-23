@@ -19,87 +19,99 @@
 <body>
 
 
-        <div class=container>
+    <div class=container>
 
-            <div class="navbar">
-                <nav class=navigation>
+        <div class="navbar">
+            <nav class=navigation>
+                <br>
+                <br>
+                <br>
+                <ul style="margin: 0; top: 50px;" class="menu-bar menu-bartop">
+                    <li onclick="window.open('/index.html','_self')">Home</li>
+                    <li onclick="window.open('/categories/Images.html','_self')">Images</li>
+                    <li onclick="window.open('/categories/Gifs.html','_self')">Gifs</li>
+                    <li onclick="window.open('/categories/Misc.html','_self')">Misc</li>
+                    <li onclick="window.open('https://discord.gg/Yrw4CfW')">Discord</li>
+                  </ul>
+                
+                  <ul style="top: 550px;" class="menu-bar menu-barbottom">
+                    <li class="prev" onclick="gridrefresh()"><</li>
+                    <li class="next" onclick="gridrefresh()">></li>
+                </ul>
+                <!--Button Catergory
+                <ul class=buttonanim>
+                    <li><a class="Homecateg ButtonCateg linkanim" onclick="window.open('/index.html','_self')"> HOME
+                        </a></li>
+                    <li><a class="Homecateg ButtonCateg linkanim" type="categg" onclick="CategClick()"> CATEGORIES
+                        </a></li>
+                    <a class="Homecateg ButtonCateg linkanim" onclick="window.open('https://discord.gg/Yrw4CfW')">
+                        DISCORD </a>
+                    <div class="categgs" id="categgs">
+
+                        <button class="button-48, hide" onclick="window.open('/categories/Images.html','_self')"
+                            role="button" id=ButtonCategid1><span class="text">Images</span></button>
+
+                        <button class="button-48, hide" onclick="window.open('/categories/Gifs.html','_self')"
+                            role="button" id=ButtonCategid2><span class="text">Gifs</span></button>
+
+                        <button class="button-48, hide" onclick="window.open('/categories/Misc.html','_self')"
+                            role="button" id=ButtonCategid3><span class="text">Misc</span></button>
+                    </div>
+                </ul>-->
+
+                <ul class="nav-menu">
                     <br>
-                    <br>
-                    <br>
-                    <!--Button Catergory-->
-                    <ul class=buttonanim>
-                        <li><a class="Homecateg ButtonCateg linkanim" onclick="window.open('/index.html','_self')"> HOME
-                            </a></li>
-                        <li><a class="Homecateg ButtonCateg linkanim" type="categg" onclick="CategClick()"> CATEGORIES
-                            </a></li>
-                        <a class="Homecateg ButtonCateg linkanim" onclick="window.open('https://discord.gg/Yrw4CfW')">
-                            DISCORD </a>
-                        <div class="categgs" id="categgs">
-
-                            <button class="button-48, hide" onclick="window.open('/categories/Images.html','_self')"
-                                role="button" id=ButtonCategid1><span class="text">Images</span></button>
-
-                            <button class="button-48, hide" onclick="window.open('/categories/Gifs.html','_self')"
-                                role="button" id=ButtonCategid2><span class="text">Gifs</span></button>
-
-                            <button class="button-48, hide" onclick="window.open('/categories/Misc.html','_self')"
-                                role="button" id=ButtonCategid3><span class="text">Misc</span></button>
-                        </div>
-                    </ul>
-
-                    <ul class="nav-menu">
+                    <li class="navitem">
                         <br>
-                        <li class="navitem">
-                            <br>
-                            <a href="/index.html" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/categories/Images.html" class="nav-link">Images</a>
-                        </li>
-                        <li class="navitem">
-                            <a href="/categories/Gifs.html" class="nav-link">Gifs</a>
-                        </li>
-                        <li class="navitem">
-                            <a href="/categories/Misc.html" class="nav-link">Misc</a>
-                        </li>
-                        <li class="navitem">
-                            <a href="https://discord.com/invite/Yrw4CfW" class="nav-link">Discord</a>
-                        </li>
-                    </ul>
-                    </ul>
-                    <div class="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
+                        <a href="/index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/categories/Images.html" class="nav-link">Images</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="/categories/Gifs.html" class="nav-link">Gifs</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="/categories/Misc.html" class="nav-link">Misc</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="https://discord.com/invite/Yrw4CfW" class="nav-link">Discord</a>
+                    </li>
+                </ul>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
 
-                    <!--This is what shows after categories is clicked-->
+                <!--This is what shows after categories is clicked-->
 
 
 
 
 
-                </nav>
-            </div>
-            <div class="row">
-                <div class="titlecol">
-                    <h1 class=frontpageh>Echishorts</h1>
-                    <div class="wrapper">
-                        <div class="search__input">
-                            <a href="" target="_blank" hidden></a>
-                            <input type="text" id="search" autocomplete="off" placeholder="Search Hints: I/ or G/">
-                            <div class="autocom-box">
-                                <!-- here list are inserted from javascript -->
-                            </div>
-                            <div class="icon" onclick="openPage()"><i class="fas fa-search search_icon"></i></div>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="titlecol">
+                <h1 class=frontpageh>Echishorts</h1>
+                <div class="wrapper">
+                    <div class="search__input">
+                        <a href="" target="_blank" hidden></a>
+                        <input type="text" id="search" autocomplete="off" placeholder="Search Hints: I/ or G/">
+                        <div class="autocom-box">
+                            <!-- here list are inserted from javascript -->
                         </div>
+                        <div class="icon" onclick="openPage()"><i class="fas fa-search search_icon"></i></div>
                     </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <!-- 
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <!-- 
 Adriel (papi) says 
 also CHANGE THE TEXT type to 'search' type
 
@@ -112,43 +124,69 @@ search = search.replace(" ","")
 
 -->
 
-                </div>
+            </div>
 
-                <div class="col" id=col>
+            <div class="col" id=col>
 
-                    <h1 class="featured">Aheago</h1>
-                    <br></br>
-                    <div class="container">
-                        <div class="pagecontainer">
-                            <a href="#" class="prev bstyling" style="
+                <h1 class="featured">Aheago</h1>
+                <br></br>
+                <div class="container">
+                 <!--  <div class="pagecontainer">
+                        <a href="#" class="prev bstyling" style="
                 margin-bottom: 10px">PREV PAGE</a>
-                            <a href="#" onclick="gridrefresh()" class="next bstyling" style="
+                        <a href="#" onclick="gridrefresh()" class="next bstyling" style="
                 margin-bottom: 10px;">NEXT PAGE</a>
+                    </div> -->
+                    <div class="grid">
+                        <div class="grid-col grid-col--1">
+
                         </div>
-                        <div class="grid">
-                            <div class="grid-col grid-col--1">
+                        <div class="grid-col grid-col--2">
 
-                            </div>
-                            <div class="grid-col grid-col--2">
+                        </div>
+                        <div class="grid-col grid-col--3">
 
-                            </div>
-                            <div class="grid-col grid-col--3">
+                        </div>
+                        <div class="grid-col grid-col--4">
 
-                            </div>
-                            <div class="grid-col grid-col--4">
+                        </div>
+                        <div class="grid-col grid-col--5">
 
-                            </div>
-                            <div class="grid-col grid-col--5">
+                        </div>
+                        <!--image_start-->
+                        <div class="grid-item">
 
-                            </div>
-<!--image_start-->
+                            <span class="item" style="margin-bottom: 5px;">
+                                <img
+                                    src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+                                <div class="top" id="refresh">
+                                    <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                        target="_blank" class="btn btn-download btn-download"><i
+                                            class="fa fa-fw fa-download"></i></a>
+                                    <a id="popupbutton" data-popup-target="#popup" data-close-target
+                                        class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
+                                    <!--Creates the popup body-->
+                                    <div class="popup-overlay" id="closePopup">
+                                        <!--Creates the popup content-->
+                                        <h6>Uploaded By</h6>
+                                        <p style="color: white; font-size: 2vh;">Smart#1234</p>
+                                        <!--popup's close button-->
+                                        <a onclick="" style="padding-left: 2px;"
+                                            class="btn btn-close-profile">Profile</a>
+                                        <a onclick="closePopup()" style="padding-left: 2px;"
+                                            class="btn btn-close-profile">Close</a>
+                                    </div>
+                                </div>
+                            </span>
+
                             <div class="grid-item">
-                                
+
                                 <span class="item" style="margin-bottom: 5px;">
-                                    <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+                                    <img
+                                        src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
                                     <div class="top" id="refresh">
-                                        <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
-                                            class="btn btn-download btn-download"><i
+                                        <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                            target="_blank" class="btn btn-download btn-download"><i
                                                 class="fa fa-fw fa-download"></i></a>
                                         <a id="popupbutton" data-popup-target="#popup" data-close-target
                                             class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
@@ -166,13 +204,15 @@ search = search.replace(" ","")
                                     </div>
                                 </span>
 
+
                                 <div class="grid-item">
-                                
+
                                     <span class="item" style="margin-bottom: 5px;">
-                                        <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+                                        <img
+                                            src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
                                         <div class="top" id="refresh">
-                                            <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
-                                                class="btn btn-download btn-download"><i
+                                            <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                target="_blank" class="btn btn-download btn-download"><i
                                                     class="fa fa-fw fa-download"></i></a>
                                             <a id="popupbutton" data-popup-target="#popup" data-close-target
                                                 class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
@@ -189,15 +229,16 @@ search = search.replace(" ","")
                                             </div>
                                         </div>
                                     </span>
-    
+
 
                                     <div class="grid-item">
-                                
+
                                         <span class="item" style="margin-bottom: 5px;">
-                                            <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+                                            <img
+                                                src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
                                             <div class="top" id="refresh">
-                                                <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
-                                                    class="btn btn-download btn-download"><i
+                                                <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                    target="_blank" class="btn btn-download btn-download"><i
                                                         class="fa fa-fw fa-download"></i></a>
                                                 <a id="popupbutton" data-popup-target="#popup" data-close-target
                                                     class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
@@ -214,18 +255,20 @@ search = search.replace(" ","")
                                                 </div>
                                             </div>
                                         </span>
-        
-    
+
+
                                         <div class="grid-item">
-                                
+
                                             <span class="item" style="margin-bottom: 5px;">
-                                                <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+                                                <img
+                                                    src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
                                                 <div class="top" id="refresh">
-                                                    <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
-                                                        class="btn btn-download btn-download"><i
+                                                    <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                        target="_blank" class="btn btn-download btn-download"><i
                                                             class="fa fa-fw fa-download"></i></a>
                                                     <a id="popupbutton" data-popup-target="#popup" data-close-target
-                                                        class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
+                                                        class="btn btn-info btn-info"><i
+                                                            class="fa fa-fw fa-info"></i></a>
                                                     <!--Creates the popup body-->
                                                     <div class="popup-overlay" id="closePopup">
                                                         <!--Creates the popup content-->
@@ -239,18 +282,20 @@ search = search.replace(" ","")
                                                     </div>
                                                 </div>
                                             </span>
-            
-        
+
+
                                             <div class="grid-item">
-                                
+
                                                 <span class="item" style="margin-bottom: 5px;">
-                                                    <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+                                                    <img
+                                                        src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
                                                     <div class="top" id="refresh">
-                                                        <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
-                                                            class="btn btn-download btn-download"><i
+                                                        <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                            target="_blank" class="btn btn-download btn-download"><i
                                                                 class="fa fa-fw fa-download"></i></a>
                                                         <a id="popupbutton" data-popup-target="#popup" data-close-target
-                                                            class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
+                                                            class="btn btn-info btn-info"><i
+                                                                class="fa fa-fw fa-info"></i></a>
                                                         <!--Creates the popup body-->
                                                         <div class="popup-overlay" id="closePopup">
                                                             <!--Creates the popup content-->
@@ -264,18 +309,20 @@ search = search.replace(" ","")
                                                         </div>
                                                     </div>
                                                 </span>
-                
-            
+
+
                                                 <div class="grid-item">
-                                
+
                                                     <span class="item" style="margin-bottom: 5px;">
-                                                        <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+                                                        <img
+                                                            src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
                                                         <div class="top" id="refresh">
-                                                            <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
-                                                                class="btn btn-download btn-download"><i
+                                                            <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                                target="_blank" class="btn btn-download btn-download"><i
                                                                     class="fa fa-fw fa-download"></i></a>
-                                                            <a id="popupbutton" data-popup-target="#popup" data-close-target
-                                                                class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
+                                                            <a id="popupbutton" data-popup-target="#popup"
+                                                                data-close-target class="btn btn-info btn-info"><i
+                                                                    class="fa fa-fw fa-info"></i></a>
                                                             <!--Creates the popup body-->
                                                             <div class="popup-overlay" id="closePopup">
                                                                 <!--Creates the popup content-->
@@ -289,23 +336,27 @@ search = search.replace(" ","")
                                                             </div>
                                                         </div>
                                                     </span>
-                    
-                
+
+
                                                     <div class="grid-item">
-                                
+
                                                         <span class="item" style="margin-bottom: 5px;">
-                                                            <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+                                                            <img
+                                                                src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
                                                             <div class="top" id="refresh">
-                                                                <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
+                                                                <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                                    target="_blank"
                                                                     class="btn btn-download btn-download"><i
                                                                         class="fa fa-fw fa-download"></i></a>
-                                                                <a id="popupbutton" data-popup-target="#popup" data-close-target
-                                                                    class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
+                                                                <a id="popupbutton" data-popup-target="#popup"
+                                                                    data-close-target class="btn btn-info btn-info"><i
+                                                                        class="fa fa-fw fa-info"></i></a>
                                                                 <!--Creates the popup body-->
                                                                 <div class="popup-overlay" id="closePopup">
                                                                     <!--Creates the popup content-->
                                                                     <h6>Uploaded By</h6>
-                                                                    <p style="color: white; font-size: 2vh;">Smart#1234</p>
+                                                                    <p style="color: white; font-size: 2vh;">Smart#1234
+                                                                    </p>
                                                                     <!--popup's close button-->
                                                                     <a onclick="" style="padding-left: 2px;"
                                                                         class="btn btn-close-profile">Profile</a>
@@ -314,410 +365,547 @@ search = search.replace(" ","")
                                                                 </div>
                                                             </div>
                                                         </span>
-                        
-                    
+
+
                                                         <div class="grid-item">
-                                
+
                                                             <span class="item" style="margin-bottom: 5px;">
-                                                                <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+                                                                <img
+                                                                    src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
                                                                 <div class="top" id="refresh">
-                                                                    <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
+                                                                    <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                                        target="_blank"
                                                                         class="btn btn-download btn-download"><i
                                                                             class="fa fa-fw fa-download"></i></a>
-                                                                    <a id="popupbutton" data-popup-target="#popup" data-close-target
-                                                                        class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
+                                                                    <a id="popupbutton" data-popup-target="#popup"
+                                                                        data-close-target
+                                                                        class="btn btn-info btn-info"><i
+                                                                            class="fa fa-fw fa-info"></i></a>
                                                                     <!--Creates the popup body-->
                                                                     <div class="popup-overlay" id="closePopup">
                                                                         <!--Creates the popup content-->
                                                                         <h6>Uploaded By</h6>
-                                                                        <p style="color: white; font-size: 2vh;">Smart#1234</p>
+                                                                        <p style="color: white; font-size: 2vh;">
+                                                                            Smart#1234</p>
                                                                         <!--popup's close button-->
                                                                         <a onclick="" style="padding-left: 2px;"
                                                                             class="btn btn-close-profile">Profile</a>
-                                                                        <a onclick="closePopup()" style="padding-left: 2px;"
+                                                                        <a onclick="closePopup()"
+                                                                            style="padding-left: 2px;"
                                                                             class="btn btn-close-profile">Close</a>
                                                                     </div>
                                                                 </div>
                                                             </span>
-                            
-                        
+
+
                                                             <div class="grid-item">
-                                
+
                                                                 <span class="item" style="margin-bottom: 5px;">
-                                                                    <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+                                                                    <img
+                                                                        src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
                                                                     <div class="top" id="refresh">
-                                                                        <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
+                                                                        <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                                            target="_blank"
                                                                             class="btn btn-download btn-download"><i
                                                                                 class="fa fa-fw fa-download"></i></a>
-                                                                        <a id="popupbutton" data-popup-target="#popup" data-close-target
-                                                                            class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
+                                                                        <a id="popupbutton" data-popup-target="#popup"
+                                                                            data-close-target
+                                                                            class="btn btn-info btn-info"><i
+                                                                                class="fa fa-fw fa-info"></i></a>
                                                                         <!--Creates the popup body-->
                                                                         <div class="popup-overlay" id="closePopup">
                                                                             <!--Creates the popup content-->
                                                                             <h6>Uploaded By</h6>
-                                                                            <p style="color: white; font-size: 2vh;">Smart#1234</p>
+                                                                            <p style="color: white; font-size: 2vh;">
+                                                                                Smart#1234</p>
                                                                             <!--popup's close button-->
                                                                             <a onclick="" style="padding-left: 2px;"
                                                                                 class="btn btn-close-profile">Profile</a>
-                                                                            <a onclick="closePopup()" style="padding-left: 2px;"
+                                                                            <a onclick="closePopup()"
+                                                                                style="padding-left: 2px;"
                                                                                 class="btn btn-close-profile">Close</a>
                                                                         </div>
                                                                     </div>
                                                                 </span>
-                                
-                            
+
+
                                                                 <div class="grid-item">
-                                
+
                                                                     <span class="item" style="margin-bottom: 5px;">
-                                                                        <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+                                                                        <img
+                                                                            src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
                                                                         <div class="top" id="refresh">
-                                                                            <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
+                                                                            <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                                                target="_blank"
                                                                                 class="btn btn-download btn-download"><i
                                                                                     class="fa fa-fw fa-download"></i></a>
-                                                                            <a id="popupbutton" data-popup-target="#popup" data-close-target
-                                                                                class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
+                                                                            <a id="popupbutton"
+                                                                                data-popup-target="#popup"
+                                                                                data-close-target
+                                                                                class="btn btn-info btn-info"><i
+                                                                                    class="fa fa-fw fa-info"></i></a>
                                                                             <!--Creates the popup body-->
                                                                             <div class="popup-overlay" id="closePopup">
                                                                                 <!--Creates the popup content-->
                                                                                 <h6>Uploaded By</h6>
-                                                                                <p style="color: white; font-size: 2vh;">Smart#1234</p>
+                                                                                <p
+                                                                                    style="color: white; font-size: 2vh;">
+                                                                                    Smart#1234</p>
                                                                                 <!--popup's close button-->
                                                                                 <a onclick="" style="padding-left: 2px;"
                                                                                     class="btn btn-close-profile">Profile</a>
-                                                                                <a onclick="closePopup()" style="padding-left: 2px;"
+                                                                                <a onclick="closePopup()"
+                                                                                    style="padding-left: 2px;"
                                                                                     class="btn btn-close-profile">Close</a>
                                                                             </div>
                                                                         </div>
                                                                     </span>
-                                    
-                                
+
+
                                                                     <div class="grid-item">
-                                
+
                                                                         <span class="item" style="margin-bottom: 5px;">
-                                                                            <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+                                                                            <img
+                                                                                src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
                                                                             <div class="top" id="refresh">
-                                                                                <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
+                                                                                <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                                                    target="_blank"
                                                                                     class="btn btn-download btn-download"><i
                                                                                         class="fa fa-fw fa-download"></i></a>
-                                                                                <a id="popupbutton" data-popup-target="#popup" data-close-target
-                                                                                    class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
+                                                                                <a id="popupbutton"
+                                                                                    data-popup-target="#popup"
+                                                                                    data-close-target
+                                                                                    class="btn btn-info btn-info"><i
+                                                                                        class="fa fa-fw fa-info"></i></a>
                                                                                 <!--Creates the popup body-->
-                                                                                <div class="popup-overlay" id="closePopup">
+                                                                                <div class="popup-overlay"
+                                                                                    id="closePopup">
                                                                                     <!--Creates the popup content-->
                                                                                     <h6>Uploaded By</h6>
-                                                                                    <p style="color: white; font-size: 2vh;">Smart#1234</p>
+                                                                                    <p
+                                                                                        style="color: white; font-size: 2vh;">
+                                                                                        Smart#1234</p>
                                                                                     <!--popup's close button-->
-                                                                                    <a onclick="" style="padding-left: 2px;"
+                                                                                    <a onclick=""
+                                                                                        style="padding-left: 2px;"
                                                                                         class="btn btn-close-profile">Profile</a>
-                                                                                    <a onclick="closePopup()" style="padding-left: 2px;"
+                                                                                    <a onclick="closePopup()"
+                                                                                        style="padding-left: 2px;"
                                                                                         class="btn btn-close-profile">Close</a>
                                                                                 </div>
                                                                             </div>
                                                                         </span>
-                                        
-                                    
+
+
                                                                         <div class="grid-item">
-                                
-                                                                            <span class="item" style="margin-bottom: 5px;">
-                                                                                <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+
+                                                                            <span class="item"
+                                                                                style="margin-bottom: 5px;">
+                                                                                <img
+                                                                                    src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
                                                                                 <div class="top" id="refresh">
-                                                                                    <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
+                                                                                    <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                                                        target="_blank"
                                                                                         class="btn btn-download btn-download"><i
                                                                                             class="fa fa-fw fa-download"></i></a>
-                                                                                    <a id="popupbutton" data-popup-target="#popup" data-close-target
-                                                                                        class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
+                                                                                    <a id="popupbutton"
+                                                                                        data-popup-target="#popup"
+                                                                                        data-close-target
+                                                                                        class="btn btn-info btn-info"><i
+                                                                                            class="fa fa-fw fa-info"></i></a>
                                                                                     <!--Creates the popup body-->
-                                                                                    <div class="popup-overlay" id="closePopup">
+                                                                                    <div class="popup-overlay"
+                                                                                        id="closePopup">
                                                                                         <!--Creates the popup content-->
                                                                                         <h6>Uploaded By</h6>
-                                                                                        <p style="color: white; font-size: 2vh;">Smart#1234</p>
+                                                                                        <p
+                                                                                            style="color: white; font-size: 2vh;">
+                                                                                            Smart#1234</p>
                                                                                         <!--popup's close button-->
-                                                                                        <a onclick="" style="padding-left: 2px;"
+                                                                                        <a onclick=""
+                                                                                            style="padding-left: 2px;"
                                                                                             class="btn btn-close-profile">Profile</a>
-                                                                                        <a onclick="closePopup()" style="padding-left: 2px;"
+                                                                                        <a onclick="closePopup()"
+                                                                                            style="padding-left: 2px;"
                                                                                             class="btn btn-close-profile">Close</a>
                                                                                     </div>
                                                                                 </div>
                                                                             </span>
-                                            
-                                        
+
+
                                                                             <div class="grid-item">
-                                
-                                                                                <span class="item" style="margin-bottom: 5px;">
-                                                                                    <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+
+                                                                                <span class="item"
+                                                                                    style="margin-bottom: 5px;">
+                                                                                    <img
+                                                                                        src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
                                                                                     <div class="top" id="refresh">
-                                                                                        <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
+                                                                                        <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                                                            target="_blank"
                                                                                             class="btn btn-download btn-download"><i
                                                                                                 class="fa fa-fw fa-download"></i></a>
-                                                                                        <a id="popupbutton" data-popup-target="#popup" data-close-target
-                                                                                            class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
+                                                                                        <a id="popupbutton"
+                                                                                            data-popup-target="#popup"
+                                                                                            data-close-target
+                                                                                            class="btn btn-info btn-info"><i
+                                                                                                class="fa fa-fw fa-info"></i></a>
                                                                                         <!--Creates the popup body-->
-                                                                                        <div class="popup-overlay" id="closePopup">
+                                                                                        <div class="popup-overlay"
+                                                                                            id="closePopup">
                                                                                             <!--Creates the popup content-->
                                                                                             <h6>Uploaded By</h6>
-                                                                                            <p style="color: white; font-size: 2vh;">Smart#1234</p>
+                                                                                            <p
+                                                                                                style="color: white; font-size: 2vh;">
+                                                                                                Smart#1234</p>
                                                                                             <!--popup's close button-->
-                                                                                            <a onclick="" style="padding-left: 2px;"
+                                                                                            <a onclick=""
+                                                                                                style="padding-left: 2px;"
                                                                                                 class="btn btn-close-profile">Profile</a>
-                                                                                            <a onclick="closePopup()" style="padding-left: 2px;"
+                                                                                            <a onclick="closePopup()"
+                                                                                                style="padding-left: 2px;"
                                                                                                 class="btn btn-close-profile">Close</a>
                                                                                         </div>
                                                                                     </div>
                                                                                 </span>
-                                                
-                                            
+
+
                                                                                 <div class="grid-item">
-                                
-                                                                                    <span class="item" style="margin-bottom: 5px;">
-                                                                                        <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+
+                                                                                    <span class="item"
+                                                                                        style="margin-bottom: 5px;">
+                                                                                        <img
+                                                                                            src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
                                                                                         <div class="top" id="refresh">
-                                                                                            <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
+                                                                                            <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                                                                target="_blank"
                                                                                                 class="btn btn-download btn-download"><i
                                                                                                     class="fa fa-fw fa-download"></i></a>
-                                                                                            <a id="popupbutton" data-popup-target="#popup" data-close-target
-                                                                                                class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
+                                                                                            <a id="popupbutton"
+                                                                                                data-popup-target="#popup"
+                                                                                                data-close-target
+                                                                                                class="btn btn-info btn-info"><i
+                                                                                                    class="fa fa-fw fa-info"></i></a>
                                                                                             <!--Creates the popup body-->
-                                                                                            <div class="popup-overlay" id="closePopup">
+                                                                                            <div class="popup-overlay"
+                                                                                                id="closePopup">
                                                                                                 <!--Creates the popup content-->
                                                                                                 <h6>Uploaded By</h6>
-                                                                                                <p style="color: white; font-size: 2vh;">Smart#1234</p>
+                                                                                                <p
+                                                                                                    style="color: white; font-size: 2vh;">
+                                                                                                    Smart#1234</p>
                                                                                                 <!--popup's close button-->
-                                                                                                <a onclick="" style="padding-left: 2px;"
+                                                                                                <a onclick=""
+                                                                                                    style="padding-left: 2px;"
                                                                                                     class="btn btn-close-profile">Profile</a>
-                                                                                                <a onclick="closePopup()" style="padding-left: 2px;"
+                                                                                                <a onclick="closePopup()"
+                                                                                                    style="padding-left: 2px;"
                                                                                                     class="btn btn-close-profile">Close</a>
                                                                                             </div>
                                                                                         </div>
                                                                                     </span>
-                                                    
-                                                
+
+
                                                                                     <div class="grid-item">
-                                
-                                                                                        <span class="item" style="margin-bottom: 5px;">
-                                                                                            <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
-                                                                                            <div class="top" id="refresh">
-                                                                                                <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
+
+                                                                                        <span class="item"
+                                                                                            style="margin-bottom: 5px;">
+                                                                                            <img
+                                                                                                src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+                                                                                            <div class="top"
+                                                                                                id="refresh">
+                                                                                                <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                                                                    target="_blank"
                                                                                                     class="btn btn-download btn-download"><i
                                                                                                         class="fa fa-fw fa-download"></i></a>
-                                                                                                <a id="popupbutton" data-popup-target="#popup" data-close-target
-                                                                                                    class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
+                                                                                                <a id="popupbutton"
+                                                                                                    data-popup-target="#popup"
+                                                                                                    data-close-target
+                                                                                                    class="btn btn-info btn-info"><i
+                                                                                                        class="fa fa-fw fa-info"></i></a>
                                                                                                 <!--Creates the popup body-->
-                                                                                                <div class="popup-overlay" id="closePopup">
+                                                                                                <div class="popup-overlay"
+                                                                                                    id="closePopup">
                                                                                                     <!--Creates the popup content-->
                                                                                                     <h6>Uploaded By</h6>
-                                                                                                    <p style="color: white; font-size: 2vh;">Smart#1234</p>
+                                                                                                    <p
+                                                                                                        style="color: white; font-size: 2vh;">
+                                                                                                        Smart#1234</p>
                                                                                                     <!--popup's close button-->
-                                                                                                    <a onclick="" style="padding-left: 2px;"
+                                                                                                    <a onclick=""
+                                                                                                        style="padding-left: 2px;"
                                                                                                         class="btn btn-close-profile">Profile</a>
-                                                                                                    <a onclick="closePopup()" style="padding-left: 2px;"
+                                                                                                    <a onclick="closePopup()"
+                                                                                                        style="padding-left: 2px;"
                                                                                                         class="btn btn-close-profile">Close</a>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </span>
-                                                        
-                                                    
+
+
                                                                                         <div class="grid-item">
-                                
-                                                                                            <span class="item" style="margin-bottom: 5px;">
-                                                                                                <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
-                                                                                                <div class="top" id="refresh">
-                                                                                                    <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
+
+                                                                                            <span class="item"
+                                                                                                style="margin-bottom: 5px;">
+                                                                                                <img
+                                                                                                    src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+                                                                                                <div class="top"
+                                                                                                    id="refresh">
+                                                                                                    <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                                                                        target="_blank"
                                                                                                         class="btn btn-download btn-download"><i
                                                                                                             class="fa fa-fw fa-download"></i></a>
-                                                                                                    <a id="popupbutton" data-popup-target="#popup" data-close-target
-                                                                                                        class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
+                                                                                                    <a id="popupbutton"
+                                                                                                        data-popup-target="#popup"
+                                                                                                        data-close-target
+                                                                                                        class="btn btn-info btn-info"><i
+                                                                                                            class="fa fa-fw fa-info"></i></a>
                                                                                                     <!--Creates the popup body-->
-                                                                                                    <div class="popup-overlay" id="closePopup">
+                                                                                                    <div class="popup-overlay"
+                                                                                                        id="closePopup">
                                                                                                         <!--Creates the popup content-->
-                                                                                                        <h6>Uploaded By</h6>
-                                                                                                        <p style="color: white; font-size: 2vh;">Smart#1234</p>
+                                                                                                        <h6>Uploaded By
+                                                                                                        </h6>
+                                                                                                        <p
+                                                                                                            style="color: white; font-size: 2vh;">
+                                                                                                            Smart#1234
+                                                                                                        </p>
                                                                                                         <!--popup's close button-->
-                                                                                                        <a onclick="" style="padding-left: 2px;"
+                                                                                                        <a onclick=""
+                                                                                                            style="padding-left: 2px;"
                                                                                                             class="btn btn-close-profile">Profile</a>
-                                                                                                        <a onclick="closePopup()" style="padding-left: 2px;"
+                                                                                                        <a onclick="closePopup()"
+                                                                                                            style="padding-left: 2px;"
                                                                                                             class="btn btn-close-profile">Close</a>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </span>
-                                                            
-                                                        
+
+
                                                                                             <div class="grid-item">
-                                
-                                                                                                <span class="item" style="margin-bottom: 5px;">
-                                                                                                    <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
-                                                                                                    <div class="top" id="refresh">
-                                                                                                        <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
+
+                                                                                                <span class="item"
+                                                                                                    style="margin-bottom: 5px;">
+                                                                                                    <img
+                                                                                                        src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+                                                                                                    <div class="top"
+                                                                                                        id="refresh">
+                                                                                                        <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                                                                            target="_blank"
                                                                                                             class="btn btn-download btn-download"><i
                                                                                                                 class="fa fa-fw fa-download"></i></a>
-                                                                                                        <a id="popupbutton" data-popup-target="#popup" data-close-target
-                                                                                                            class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
+                                                                                                        <a id="popupbutton"
+                                                                                                            data-popup-target="#popup"
+                                                                                                            data-close-target
+                                                                                                            class="btn btn-info btn-info"><i
+                                                                                                                class="fa fa-fw fa-info"></i></a>
                                                                                                         <!--Creates the popup body-->
-                                                                                                        <div class="popup-overlay" id="closePopup">
+                                                                                                        <div class="popup-overlay"
+                                                                                                            id="closePopup">
                                                                                                             <!--Creates the popup content-->
-                                                                                                            <h6>Uploaded By</h6>
-                                                                                                            <p style="color: white; font-size: 2vh;">Smart#1234</p>
+                                                                                                            <h6>Uploaded
+                                                                                                                By</h6>
+                                                                                                            <p
+                                                                                                                style="color: white; font-size: 2vh;">
+                                                                                                                Smart#1234
+                                                                                                            </p>
                                                                                                             <!--popup's close button-->
-                                                                                                            <a onclick="" style="padding-left: 2px;"
+                                                                                                            <a onclick=""
+                                                                                                                style="padding-left: 2px;"
                                                                                                                 class="btn btn-close-profile">Profile</a>
-                                                                                                            <a onclick="closePopup()" style="padding-left: 2px;"
+                                                                                                            <a onclick="closePopup()"
+                                                                                                                style="padding-left: 2px;"
                                                                                                                 class="btn btn-close-profile">Close</a>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </span>
-                                                                
-                                                            
+
+
                                                                                                 <div class="grid-item">
-                                
-                                                                                                    <span class="item" style="margin-bottom: 5px;">
-                                                                                                        <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
-                                                                                                        <div class="top" id="refresh">
-                                                                                                            <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
+
+                                                                                                    <span class="item"
+                                                                                                        style="margin-bottom: 5px;">
+                                                                                                        <img
+                                                                                                            src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+                                                                                                        <div class="top"
+                                                                                                            id="refresh">
+                                                                                                            <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                                                                                target="_blank"
                                                                                                                 class="btn btn-download btn-download"><i
                                                                                                                     class="fa fa-fw fa-download"></i></a>
-                                                                                                            <a id="popupbutton" data-popup-target="#popup" data-close-target
-                                                                                                                class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
+                                                                                                            <a id="popupbutton"
+                                                                                                                data-popup-target="#popup"
+                                                                                                                data-close-target
+                                                                                                                class="btn btn-info btn-info"><i
+                                                                                                                    class="fa fa-fw fa-info"></i></a>
                                                                                                             <!--Creates the popup body-->
-                                                                                                            <div class="popup-overlay" id="closePopup">
+                                                                                                            <div class="popup-overlay"
+                                                                                                                id="closePopup">
                                                                                                                 <!--Creates the popup content-->
-                                                                                                                <h6>Uploaded By</h6>
-                                                                                                                <p style="color: white; font-size: 2vh;">Smart#1234</p>
+                                                                                                                <h6>Uploaded
+                                                                                                                    By
+                                                                                                                </h6>
+                                                                                                                <p
+                                                                                                                    style="color: white; font-size: 2vh;">
+                                                                                                                    Smart#1234
+                                                                                                                </p>
                                                                                                                 <!--popup's close button-->
-                                                                                                                <a onclick="" style="padding-left: 2px;"
+                                                                                                                <a onclick=""
+                                                                                                                    style="padding-left: 2px;"
                                                                                                                     class="btn btn-close-profile">Profile</a>
-                                                                                                                <a onclick="closePopup()" style="padding-left: 2px;"
+                                                                                                                <a onclick="closePopup()"
+                                                                                                                    style="padding-left: 2px;"
                                                                                                                     class="btn btn-close-profile">Close</a>
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </span>
-                                                                    
-                                                                
-                                                                                                    <div class="grid-item">
-                                
-                                                                                                        <span class="item" style="margin-bottom: 5px;">
-                                                                                                            <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
-                                                                                                            <div class="top" id="refresh">
-                                                                                                                <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
+
+
+                                                                                                    <div
+                                                                                                        class="grid-item">
+
+                                                                                                        <span
+                                                                                                            class="item"
+                                                                                                            style="margin-bottom: 5px;">
+                                                                                                            <img
+                                                                                                                src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+                                                                                                            <div class="top"
+                                                                                                                id="refresh">
+                                                                                                                <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                                                                                    target="_blank"
                                                                                                                     class="btn btn-download btn-download"><i
                                                                                                                         class="fa fa-fw fa-download"></i></a>
-                                                                                                                <a id="popupbutton" data-popup-target="#popup" data-close-target
-                                                                                                                    class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
+                                                                                                                <a id="popupbutton"
+                                                                                                                    data-popup-target="#popup"
+                                                                                                                    data-close-target
+                                                                                                                    class="btn btn-info btn-info"><i
+                                                                                                                        class="fa fa-fw fa-info"></i></a>
                                                                                                                 <!--Creates the popup body-->
-                                                                                                                <div class="popup-overlay" id="closePopup">
+                                                                                                                <div class="popup-overlay"
+                                                                                                                    id="closePopup">
                                                                                                                     <!--Creates the popup content-->
-                                                                                                                    <h6>Uploaded By</h6>
-                                                                                                                    <p style="color: white; font-size: 2vh;">Smart#1234</p>
+                                                                                                                    <h6>Uploaded
+                                                                                                                        By
+                                                                                                                    </h6>
+                                                                                                                    <p
+                                                                                                                        style="color: white; font-size: 2vh;">
+                                                                                                                        Smart#1234
+                                                                                                                    </p>
                                                                                                                     <!--popup's close button-->
-                                                                                                                    <a onclick="" style="padding-left: 2px;"
+                                                                                                                    <a onclick=""
+                                                                                                                        style="padding-left: 2px;"
                                                                                                                         class="btn btn-close-profile">Profile</a>
-                                                                                                                    <a onclick="closePopup()" style="padding-left: 2px;"
+                                                                                                                    <a onclick="closePopup()"
+                                                                                                                        style="padding-left: 2px;"
                                                                                                                         class="btn btn-close-profile">Close</a>
                                                                                                                 </div>
                                                                                                             </div>
                                                                                                         </span>
-                                                                        
-                                                                    
-                                                                                                        <div class="grid-item">
-                                
-                                                                                                            <span class="item" style="margin-bottom: 5px;">
-                                                                                                                <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
-                                                                                                                <div class="top" id="refresh">
-                                                                                                                    <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
+
+                                                                                                        <div
+                                                                                                            class="grid-item">
+
+                                                                                                            <span
+                                                                                                                class="item"
+                                                                                                                style="margin-bottom: 5px;">
+                                                                                                                <img
+                                                                                                                    src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
+                                                                                                                <div class="top"
+                                                                                                                    id="refresh">
+                                                                                                                    <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png"
+                                                                                                                        target="_blank"
                                                                                                                         class="btn btn-download btn-download"><i
                                                                                                                             class="fa fa-fw fa-download"></i></a>
-                                                                                                                    <a id="popupbutton" data-popup-target="#popup" data-close-target
-                                                                                                                        class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
+                                                                                                                    <a id="popupbutton"
+                                                                                                                        data-popup-target="#popup"
+                                                                                                                        data-close-target
+                                                                                                                        class="btn btn-info btn-info"><i
+                                                                                                                            class="fa fa-fw fa-info"></i></a>
                                                                                                                     <!--Creates the popup body-->
-                                                                                                                    <div class="popup-overlay" id="closePopup">
+                                                                                                                    <div class="popup-overlay"
+                                                                                                                        id="closePopup">
                                                                                                                         <!--Creates the popup content-->
-                                                                                                                        <h6>Uploaded By</h6>
-                                                                                                                        <p style="color: white; font-size: 2vh;">Smart#1234</p>
+                                                                                                                        <h6>Uploaded
+                                                                                                                            By
+                                                                                                                        </h6>
+                                                                                                                        <p
+                                                                                                                            style="color: white; font-size: 2vh;">
+                                                                                                                            Smart#1234
+                                                                                                                        </p>
                                                                                                                         <!--popup's close button-->
-                                                                                                                        <a onclick="" style="padding-left: 2px;"
+                                                                                                                        <a onclick=""
+                                                                                                                            style="padding-left: 2px;"
                                                                                                                             class="btn btn-close-profile">Profile</a>
-                                                                                                                        <a onclick="closePopup()" style="padding-left: 2px;"
+                                                                                                                        <a onclick="closePopup()"
+                                                                                                                            style="padding-left: 2px;"
                                                                                                                             class="btn btn-close-profile">Close</a>
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </span>
-                                                                            
-                                                                                                            <div class="grid-item">
-                                
-                                                                                                                <span class="item" style="margin-bottom: 5px;">
-                                                                                                                    <img src="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png">
-                                                                                                                    <div class="top" id="refresh">
-                                                                                                                        <a href="https://cdn.discordapp.com/attachments/722718571184259073/971576021801398282/unknown.png" target="_blank"
-                                                                                                                            class="btn btn-download btn-download"><i
-                                                                                                                                class="fa fa-fw fa-download"></i></a>
-                                                                                                                        <a id="popupbutton" data-popup-target="#popup" data-close-target
-                                                                                                                            class="btn btn-info btn-info"><i class="fa fa-fw fa-info"></i></a>
-                                                                                                                        <!--Creates the popup body-->
-                                                                                                                        <div class="popup-overlay" id="closePopup">
-                                                                                                                            <!--Creates the popup content-->
-                                                                                                                            <h6>Uploaded By</h6>
-                                                                                                                            <p style="color: white; font-size: 2vh;">Smart#1234</p>
-                                                                                                                            <!--popup's close button-->
-                                                                                                                            <a onclick="" style="padding-left: 2px;"
-                                                                                                                                class="btn btn-close-profile">Profile</a>
-                                                                                                                            <a onclick="closePopup()" style="padding-left: 2px;"
-                                                                                                                                class="btn btn-close-profile">Close</a>
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </span>
-                                                                                
-                                                                            
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 
 
-                            <!--image_end-->
-                
-                            <main style="position: relative; bottom: 0;" class="pagecontainer">
-                                <a href="#" class="prev bstyling" style="
+
+
+
+                                                                                                            <!--image_end-->
+
+                                                                                                            <!-- <main
+                                                                                                                style="display: block; position: relative;"
+                                                                                                                class="pagecontainer2">
+                                                                                                                <a href="#"
+                                                                                                                    class="prev bstyling"
+                                                                                                                    style="
                                 margin-top: 10px;">PREV PAGE</a>
-                                    <a href="#" class="next bstyling" style="
+                                                                                                                <a href="#"
+                                                                                                                    class="next bstyling"
+                                                                                                                    style="
                                 margin-top: 10px;">NEXT PAGE</a>
-                                </main>
-                </div> 
-            </div>
+                                                                                                            </main> -->
+                                                                                                        </div>
+                                                                                                    </div>
 
 
-                <!--
+                                                                                                    <!--
 s
 
 WE'RE CHANGING HOW CARDS WORK 
 document.elementgetbyid.style = sexy style css
 -->
 
-            </div>
+                                                                                                </div>
 
-        </div>
+                                                                                            </div>
 
-        <div class=side_left>
-            Upload Your Own Ads!
+                                                                                            <div class=side_left>
+                                                                                                Upload Your Own Ads!
 
-        </div>
+                                                                                            </div>
 
-        <div class=side_right>
-            Upload Your Own Ads!
-        </div>
+                                                                                            <div class=side_right>
+                                                                                                Upload Your Own Ads!
+                                                                                            </div>
 
-    </div>
+                                                                                        </div>
 
-    </div>
-
-
-    <script src="/scripts/node.js"></script>
+                                                                                    </div>
 
 
+                                                                                    <script
+                                                                                        src="/scripts/node.js"></script>
 
 
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        
-    <script src="https://unpkg.com/colcade@0/colcade.js"></script>
 
-<!--
+                                                                                </div>
+
+                                                                                <script
+                                                                                    src="https://code.jquery.com/jquery-3.6.0.min.js"
+                                                                                    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                                                                                    crossorigin="anonymous"></script>
+
+                                                                                <script
+                                                                                    src="https://unpkg.com/colcade@0/colcade.js"></script>
+
+                                                                                <!--
     <script>
         window.onload = function () {
             $('.grid').colcade({
@@ -728,53 +916,55 @@ document.elementgetbyid.style = sexy style css
     </script>
     -->
 
-    <div class="loader">
-        <!--<img src="/categories/Preloader/PreLoader.gif" alt="">-->
-        <img id="image_show" />
-    </div>
+                                                                                <div class="loader">
+                                                                                    <!--<img src="/categories/Preloader/PreLoader.gif" alt="">-->
+                                                                                    <img id="image_show" />
+                                                                                </div>
 
 
 
 
-    <script>
-        function changeStyle() {
-            var element = document.getElementById("myDiv");
-            element.style.height = "fit";
-        }
-    </script>
+                                                                                <script>
+                                                                                    function changeStyle() {
+                                                                                        var element = document.getElementById("myDiv");
+                                                                                        element.style.height = "fit";
+                                                                                    }
+                                                                                </script>
 
-    <!--search-->
-    <script>
-        function openPage() {
-            var x = document.getElementById("search").value;
+                                                                                <!--search-->
+                                                                                <script>
+                                                                                    function openPage() {
+                                                                                        var x = document.getElementById("search").value;
 
-            if (x.toUpperCase() === 'aheago'.toUpperCase()) {
-                window.open("/categories/iAheago.html");
-            }
+                                                                                        if (x.toUpperCase() === 'aheago'.toUpperCase()) {
+                                                                                            window.open("/categories/iAheago.html");
+                                                                                        }
 
-            if (x.toUpperCase() === 'lewd'.toUpperCase()) {
-                window.open("/videosites/mansheadexplodes.html");
-            }
+                                                                                        if (x.toUpperCase() === 'lewd'.toUpperCase()) {
+                                                                                            window.open("/videosites/mansheadexplodes.html");
+                                                                                        }
 
-            if (x === "Yuri") {
-                window.open("/customizedalert.html");
-            }
+                                                                                        if (x === "Yuri") {
+                                                                                            window.open("/customizedalert.html");
+                                                                                        }
 
-        }
-    </script>
+                                                                                    }
+                                                                                </script>
 
-    <script>
-        const gallery = document.getElementById('gallery')
-    </script>
+                                                                                <script>
+                                                                                    const gallery = document.getElementById('gallery')
+                                                                                </script>
+
+
+
 </body>
 
-    
+
 
 
 
 
 <!--Starting to put js scripts in here
-
 
 ~Jacob -->
 <script src="/scripts/coolpage.js"></script>
