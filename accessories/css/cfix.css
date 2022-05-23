@@ -113,7 +113,7 @@ img {
 
 @media (max-width: 768px) {
   .menu-bar {
-    visibility: hidden;
+    margin: 50px 0 0 50vw;
   }
   .Homecateg {
     display: none;
@@ -1846,7 +1846,6 @@ div.top .popup-content.active {
 /*popup button end*/
 /* new bar */
 .menu-bar {
-  margin: 50px 0 0 50vw;
   top: 0;
   position: fixed;
   height: -webkit-fit-content;
@@ -1913,4 +1912,4 @@ div.top .popup-content.active {
 /* new bar end */
 /* footer start */
 /* footer end*/
-/*# sourceMappingURL=image.css.map */
+/*# sourceMappingURL=cfix.css.map */
